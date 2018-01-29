@@ -4,7 +4,7 @@ import { shallow } from 'enzyme';
 import App from './App';
 
 describe('App', () => {
-  let wrapper
+  let wrapper;
 
   beforeEach(() => {
     wrapper = shallow(<App />);
@@ -20,8 +20,8 @@ describe('App', () => {
     expect(wrapper).toBeDefined();
   });
 
-  it('should have a class name of .App', () => {
-    expect(wrapper.find('div').hasClass('App')).toEqual(true);
+  it('should have a class name of .app', () => {
+    expect(wrapper.find('div').hasClass('app')).toEqual(true);
   });
 
 });
