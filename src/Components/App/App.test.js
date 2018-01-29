@@ -20,7 +20,7 @@ describe('App', () => {
     expect(wrapper).toBeDefined();
   });
 
-  it('shold have a class name of .App', () => {
+  it('should have a class name of .App', () => {
     expect(wrapper.find('div').hasClass('App')).toEqual(true);
   });
 
