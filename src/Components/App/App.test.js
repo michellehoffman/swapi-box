@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
+import mockData from '../../mockData/mockData';
 import App from './App';
 
 describe('App', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<App />);
+    wrapper = mount(<App />);
   })
 
   it('renders without crashing', () => {
@@ -16,12 +17,16 @@ describe('App', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('should exist', () => {
-    expect(wrapper).toBeDefined();
+  it('should render an OpeningCrawl component', () => {
+    expect(wrapper.find('OpeningCrawl').length).toEqual(1);
   });
 
-  it('should have a class name of .app', () => {
-    expect(wrapper.find('div').hasClass('app')).toEqual(true);
+  it('should select a random film to pass to OpeningCrawl component', () => {
+    const crawlData = mockData.films.results;
+    const expected = crawlData[0];
+    const randomFilm = wrapper.instance().getRandomFilm(crawlData);
+
+    expect(randomFilm).toEqual(expected);
   });
 
 });

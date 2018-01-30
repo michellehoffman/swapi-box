@@ -1,4 +1,4 @@
-export const mockData = {
+const mockData = {
   "people": {
     "count": 1, 
     "next": "https://swapi.co/api/people/?page=2", 
@@ -163,3 +163,5 @@ export const mockData = {
     ]
   }
 }
+
+export default mockData;
