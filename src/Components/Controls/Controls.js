@@ -1,13 +1,20 @@
 import React from 'react';
 import './Controls.css';
 
-const Controls = () => {
+const Controls = (favorites) => {
+  const num = favorites.length || 0;
+
   return (
     <div>
-      <button>PEOPLE</button>
-      <button>PLANETS</button>
-      <button>VEHICLES</button>
-    </div>
+      <div>
+        <button>people</button>
+        <button>planets</button>
+        <button>vehicles</button>
+      </div>
+      <div>
+        <button>favorites <span>{num}</span></button>
+      </div>
+    </div> 
   )
 }
 
