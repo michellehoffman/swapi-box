@@ -19,13 +19,19 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div>
-          <button>
+          <button
+                    onClick={[Function]}
+          >
                     people
           </button>
-          <button>
+          <button
+                    onClick={[Function]}
+          >
                     planets
           </button>
-          <button>
+          <button
+                    onClick={[Function]}
+          >
                     vehicles
           </button>
 </div>,
@@ -45,13 +51,19 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <button>
+            <button
+              onClick={[Function]}
+>
               people
 </button>,
-            <button>
+            <button
+              onClick={[Function]}
+>
               planets
 </button>,
-            <button>
+            <button
+              onClick={[Function]}
+>
               vehicles
 </button>,
           ],
@@ -64,6 +76,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "people",
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "people",
@@ -75,6 +88,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "planets",
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "planets",
@@ -86,6 +100,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "vehicles",
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "vehicles",
@@ -145,13 +160,19 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div>
-            <button>
+            <button
+                        onClick={[Function]}
+            >
                         people
             </button>
-            <button>
+            <button
+                        onClick={[Function]}
+            >
                         planets
             </button>
-            <button>
+            <button
+                        onClick={[Function]}
+            >
                         vehicles
             </button>
 </div>,
@@ -171,13 +192,19 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <button>
+              <button
+                onClick={[Function]}
+>
                 people
 </button>,
-              <button>
+              <button
+                onClick={[Function]}
+>
                 planets
 </button>,
-              <button>
+              <button
+                onClick={[Function]}
+>
                 vehicles
 </button>,
             ],
@@ -190,6 +217,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "people",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "people",
@@ -201,6 +229,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "planets",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "planets",
@@ -212,6 +241,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "vehicles",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "vehicles",

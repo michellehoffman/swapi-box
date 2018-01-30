@@ -10,8 +10,14 @@ class App extends Component {
     super();
 
     this.state = {
-      favorites: []
+      people: [],
+      favorites: [],
+      current: null
     }
+  }
+
+  componentDidMount() {
+    this.getPeople();
   }
   
   getRandomFilm = array => {
@@ -21,12 +27,16 @@ class App extends Component {
     return array[randomNum];
   }
 
+  getPeople = () => this.setState({ people: mockData.people.results });
+
+  dataToDisplay = element => this.setState({ current: element });
+
   render() {
     return (
       <div className="app">
         <OpeningCrawl { ...(this.getRandomFilm(mockData.films.results))} />
-        <Controls favorites={ this.state.favorites } />
-        <CardContainer />
+        <Controls favorites={ this.state.favorites } dataToDisplay={this.dataToDisplay} />
+        <CardContainer data={this.state[this.state.current]} />
       </div>
     );
   }

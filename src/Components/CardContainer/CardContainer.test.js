@@ -9,9 +9,10 @@ describe('CardContainer', () => {
 
   beforeEach(() => {
     wrapper = shallow(<CardContainer />);
-  })
+  });
 
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  })
+  });
+  
 })

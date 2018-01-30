@@ -8,7 +8,7 @@ describe('App', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = mount(<App />);
+    wrapper = shallow(<App />);
   })
 
   it('renders without crashing', () => {
@@ -17,8 +17,13 @@ describe('App', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('should have a default state Favorites of an empty array', () => {
-    expect(wrapper.state().favorites).toEqual([]);
+  it.skip('should have a default state', () => {
+    const expected = {
+      people: [],
+      favorites: [],
+      current: null
+    }
+    expect(wrapper.state()).toEqual(expected)
   })
 
   it('should render an OpeningCrawl component', () => {
