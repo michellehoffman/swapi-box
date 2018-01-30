@@ -3,6 +3,7 @@ import './App.css';
 import mockData from '../../mockData/mockData';
 import OpeningCrawl from '../OpeningCrawl/OpeningCrawl';
 import Controls from '../Controls/Controls';
+import CardContainer from '../CardContainer/CardContainer';
 
 class App extends Component {
   constructor() {
@@ -25,6 +26,7 @@ class App extends Component {
       <div className="app">
         <OpeningCrawl { ...(this.getRandomFilm(mockData.films.results))} />
         <Controls favorites={ this.state.favorites } />
+        <CardContainer />
       </div>
     );
   }
