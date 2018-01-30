@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './OpeningCrawl.css';
 
 const OpeningCrawl = ({ title, opening_crawl, release_date }) => {
