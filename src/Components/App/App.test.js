@@ -17,6 +17,10 @@ describe('App', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
+  it('should have a default state Favorites of an empty array', () => {
+    expect(wrapper.state().favorites).toEqual([]);
+  })
+
   it('should render an OpeningCrawl component', () => {
     expect(wrapper.find('OpeningCrawl').length).toEqual(1);
   });

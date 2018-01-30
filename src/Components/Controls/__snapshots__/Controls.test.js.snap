@@ -18,15 +18,23 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <button>
-          PEOPLE
-</button>,
-        <button>
-          PLANETS
-</button>,
-        <button>
-          VEHICLES
-</button>,
+        <div>
+          <button>
+                    people
+          </button>
+          <button>
+                    planets
+          </button>
+          <button>
+                    vehicles
+          </button>
+</div>,
+        <div>
+          <button>
+                    favorites 
+                    <span />
+          </button>
+</div>,
       ],
     },
     "ref": null,
@@ -36,33 +44,95 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "PEOPLE",
+          "children": Array [
+            <button>
+              people
+</button>,
+            <button>
+              planets
+</button>,
+            <button>
+              vehicles
+</button>,
+          ],
         },
         "ref": null,
-        "rendered": "PEOPLE",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "people",
+            },
+            "ref": null,
+            "rendered": "people",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "planets",
+            },
+            "ref": null,
+            "rendered": "planets",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "vehicles",
+            },
+            "ref": null,
+            "rendered": "vehicles",
+            "type": "button",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "PLANETS",
+          "children": <button>
+            favorites 
+            <span />
+</button>,
         },
         "ref": null,
-        "rendered": "PLANETS",
-        "type": "button",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "VEHICLES",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "favorites ",
+              <span />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "favorites ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": 0,
+              },
+              "ref": null,
+              "rendered": 0,
+              "type": "span",
+            },
+          ],
+          "type": "button",
         },
-        "ref": null,
-        "rendered": "VEHICLES",
-        "type": "button",
+        "type": "div",
       },
     ],
     "type": "div",
@@ -74,15 +144,23 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <button>
-            PEOPLE
-</button>,
-          <button>
-            PLANETS
-</button>,
-          <button>
-            VEHICLES
-</button>,
+          <div>
+            <button>
+                        people
+            </button>
+            <button>
+                        planets
+            </button>
+            <button>
+                        vehicles
+            </button>
+</div>,
+          <div>
+            <button>
+                        favorites 
+                        <span />
+            </button>
+</div>,
         ],
       },
       "ref": null,
@@ -92,33 +170,95 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "PEOPLE",
+            "children": Array [
+              <button>
+                people
+</button>,
+              <button>
+                planets
+</button>,
+              <button>
+                vehicles
+</button>,
+            ],
           },
           "ref": null,
-          "rendered": "PEOPLE",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "people",
+              },
+              "ref": null,
+              "rendered": "people",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "planets",
+              },
+              "ref": null,
+              "rendered": "planets",
+              "type": "button",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "vehicles",
+              },
+              "ref": null,
+              "rendered": "vehicles",
+              "type": "button",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "PLANETS",
+            "children": <button>
+              favorites 
+              <span />
+</button>,
           },
           "ref": null,
-          "rendered": "PLANETS",
-          "type": "button",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "VEHICLES",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "favorites ",
+                <span />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "favorites ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "span",
+              },
+            ],
+            "type": "button",
           },
-          "ref": null,
-          "rendered": "VEHICLES",
-          "type": "button",
+          "type": "div",
         },
       ],
       "type": "div",

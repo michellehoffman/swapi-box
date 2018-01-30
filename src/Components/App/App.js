@@ -5,6 +5,14 @@ import OpeningCrawl from '../OpeningCrawl/OpeningCrawl';
 import Controls from '../Controls/Controls';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      favorites: []
+    }
+  }
+  
   getRandomFilm = array => {
     const max = array.length - 1;
     const randomNum = Math.floor(Math.random() * max);
@@ -16,7 +24,7 @@ class App extends Component {
     return (
       <div className="app">
         <OpeningCrawl { ...(this.getRandomFilm(mockData.films.results))} />
-        <Controls />
+        <Controls favorites={ this.state.favorites } />
       </div>
     );
   }
