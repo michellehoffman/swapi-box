@@ -24,9 +24,8 @@ describe('App', () => {
   it('should select a random film to pass to OpeningCrawl component', () => {
     const crawlData = mockData.films.results;
     const expected = crawlData[0];
-    const randomFilm = wrapper.instance().getRandomFilm(crawlData);
 
-    expect(randomFilm).toEqual(expected);
+    expect(wrapper.instance().getRandomFilm(crawlData)).toEqual(expected);
   });
 
 });
