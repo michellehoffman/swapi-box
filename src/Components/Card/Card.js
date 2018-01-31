@@ -3,51 +3,61 @@ import './Card.css';
 
 const Card = ({ type, item }) => {
   const details = { ...item } 
-  let { name, population } = details
-  let { homeworld, species, terrain, climate, residents, model, vehicle_class, passengers } = details
+  const { name } = details;
 
-  const peopleDetails =  
-    <div>
-      <ul>
+  const peopleDetails = (details) => {
+    const { homeworld, species, population } = details;
+
+    return (
+      <div>
         <li>Homeworld: {homeworld}</li>
         <li>Species: {species}</li>
         <li>Population: {population}</li>
-      </ul>
-    </div>
+      </div>
+    )
+  }
 
-  const planetDetails = 
-    <div>
-      <ul>
+  const planetDetails = (details) => {
+    const { terrain, climate, population, residents } = details;
+
+    return (
+      <div>
         <li>Terrain: {terrain}</li>
         <li>Climate: {climate}</li>
         <li>Population: {population}</li>
         <li>Residents: {residents}</li>
-      </ul>
-    </div>
+      </div>
+    )
+  }
 
-  const vehicleDetails = 
-    <div>
-      <ul>
+  const vehicleDetails = (details) => {
+    const { model, vehicle_class, passengers } = details;
+
+    return (
+      <div>
         <li>Model: { model }</li>
         <li>Class: { vehicle_class }</li>
         <li>Number of Passengers: { passengers }</li>
-      </ul>
-    </div>
+      </div>
+    )
+  }
 
   const cardRendered = () => {
     if(type === 'people') {
-      return peopleDetails;
+      return peopleDetails(details);
     } else if(type === 'planets') {
-      return planetDetails;
+      return planetDetails(details);
     } else if(type === 'vehicles') {
-      return vehicleDetails;
+      return vehicleDetails(details);
     }
   }
 
   return (
     <div>
       <h2>{ name }</h2>
-      { cardRendered() }  
+      <ul>
+        { cardRendered() }
+      </ul>
       <button>+</button>
     </div>
   )
