@@ -8,11 +8,13 @@ describe('CardContainer', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<CardContainer />);
+    const array = mockData.people.results;
+
+    wrapper = shallow(<CardContainer arrayToDisplay={ array } />);
   });
 
   it('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
-  
+
 })

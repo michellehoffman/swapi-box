@@ -24,6 +24,12 @@ describe('App', () => {
       current: null
     }
     expect(wrapper.state()).toEqual(expected)
+  });
+
+  it('should set state of current to the correct element', () => {
+    wrapper.instance().dataToDisplay('people');
+
+    expect(wrapper.state().current).toEqual('people');
   })
 
   it('should render an OpeningCrawl component', () => {

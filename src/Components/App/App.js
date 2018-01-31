@@ -35,8 +35,14 @@ class App extends Component {
     return (
       <div className="app">
         <OpeningCrawl { ...(this.getRandomFilm(mockData.films.results))} />
-        <Controls favorites={ this.state.favorites } dataToDisplay={this.dataToDisplay} />
-        <CardContainer data={this.state[this.state.current]} />
+        <Controls favorites={ this.state.favorites }
+                  dataToDisplay={ this.dataToDisplay } />
+        
+        {
+          this.state.current &&
+          <CardContainer arrayToDisplay={ this.state[this.state.current] } />
+        }
+        
       </div>
     );
   }

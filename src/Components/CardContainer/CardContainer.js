@@ -1,10 +1,13 @@
 import React from 'react';
+import Card from '../Card/Card';
 import './CardContainer.css';
 
-const CardContainer = () => {
+const CardContainer = ({ arrayToDisplay }) => {
+  const renderedCards = arrayToDisplay.map( item => <Card { ...item } />)
+
   return (
     <div>
-      <h1>CardContainer</h1>
+      { renderedCards }
     </div>
   )
 }

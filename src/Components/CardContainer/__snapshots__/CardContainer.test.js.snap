@@ -4,7 +4,44 @@ exports[`CardContainer should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <CardContainer />,
+  Symbol(enzyme.__unrendered__): <CardContainer
+    arrayToDisplay={
+        Array [
+            Object {
+              "birth_year": "19BBY",
+              "created": "2014-12-09T13:50:51.644000Z",
+              "edited": "2014-12-20T21:17:56.891000Z",
+              "eye_color": "blue",
+              "films": Array [
+                "https://swapi.co/api/films/2/",
+                "https://swapi.co/api/films/6/",
+                "https://swapi.co/api/films/3/",
+                "https://swapi.co/api/films/1/",
+                "https://swapi.co/api/films/7/",
+              ],
+              "gender": "male",
+              "hair_color": "blond",
+              "height": "172",
+              "homeworld": "https://swapi.co/api/planets/1/",
+              "mass": "77",
+              "name": "Luke Skywalker",
+              "skin_color": "fair",
+              "species": Array [
+                "https://swapi.co/api/species/1/",
+              ],
+              "starships": Array [
+                "https://swapi.co/api/starships/12/",
+                "https://swapi.co/api/starships/22/",
+              ],
+              "url": "https://swapi.co/api/people/1/",
+              "vehicles": Array [
+                "https://swapi.co/api/vehicles/14/",
+                "https://swapi.co/api/vehicles/30/",
+              ],
+            },
+          ]
+    }
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,22 +54,92 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h1>
-        CardContainer
-</h1>,
+      "children": Array [
+        <Card
+          birth_year="19BBY"
+          created="2014-12-09T13:50:51.644000Z"
+          edited="2014-12-20T21:17:56.891000Z"
+          eye_color="blue"
+          films={
+                    Array [
+                              "https://swapi.co/api/films/2/",
+                              "https://swapi.co/api/films/6/",
+                              "https://swapi.co/api/films/3/",
+                              "https://swapi.co/api/films/1/",
+                              "https://swapi.co/api/films/7/",
+                            ]
+          }
+          gender="male"
+          hair_color="blond"
+          height="172"
+          homeworld="https://swapi.co/api/planets/1/"
+          mass="77"
+          name="Luke Skywalker"
+          skin_color="fair"
+          species={
+                    Array [
+                              "https://swapi.co/api/species/1/",
+                            ]
+          }
+          starships={
+                    Array [
+                              "https://swapi.co/api/starships/12/",
+                              "https://swapi.co/api/starships/22/",
+                            ]
+          }
+          url="https://swapi.co/api/people/1/"
+          vehicles={
+                    Array [
+                              "https://swapi.co/api/vehicles/14/",
+                              "https://swapi.co/api/vehicles/30/",
+                            ]
+          }
+/>,
+      ],
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "CardContainer",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "birth_year": "19BBY",
+          "created": "2014-12-09T13:50:51.644000Z",
+          "edited": "2014-12-20T21:17:56.891000Z",
+          "eye_color": "blue",
+          "films": Array [
+            "https://swapi.co/api/films/2/",
+            "https://swapi.co/api/films/6/",
+            "https://swapi.co/api/films/3/",
+            "https://swapi.co/api/films/1/",
+            "https://swapi.co/api/films/7/",
+          ],
+          "gender": "male",
+          "hair_color": "blond",
+          "height": "172",
+          "homeworld": "https://swapi.co/api/planets/1/",
+          "mass": "77",
+          "name": "Luke Skywalker",
+          "skin_color": "fair",
+          "species": Array [
+            "https://swapi.co/api/species/1/",
+          ],
+          "starships": Array [
+            "https://swapi.co/api/starships/12/",
+            "https://swapi.co/api/starships/22/",
+          ],
+          "url": "https://swapi.co/api/people/1/",
+          "vehicles": Array [
+            "https://swapi.co/api/vehicles/14/",
+            "https://swapi.co/api/vehicles/30/",
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
-      "ref": null,
-      "rendered": "CardContainer",
-      "type": "h1",
-    },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -41,22 +148,92 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <h1>
-          CardContainer
-</h1>,
+        "children": Array [
+          <Card
+            birth_year="19BBY"
+            created="2014-12-09T13:50:51.644000Z"
+            edited="2014-12-20T21:17:56.891000Z"
+            eye_color="blue"
+            films={
+                        Array [
+                                    "https://swapi.co/api/films/2/",
+                                    "https://swapi.co/api/films/6/",
+                                    "https://swapi.co/api/films/3/",
+                                    "https://swapi.co/api/films/1/",
+                                    "https://swapi.co/api/films/7/",
+                                  ]
+            }
+            gender="male"
+            hair_color="blond"
+            height="172"
+            homeworld="https://swapi.co/api/planets/1/"
+            mass="77"
+            name="Luke Skywalker"
+            skin_color="fair"
+            species={
+                        Array [
+                                    "https://swapi.co/api/species/1/",
+                                  ]
+            }
+            starships={
+                        Array [
+                                    "https://swapi.co/api/starships/12/",
+                                    "https://swapi.co/api/starships/22/",
+                                  ]
+            }
+            url="https://swapi.co/api/people/1/"
+            vehicles={
+                        Array [
+                                    "https://swapi.co/api/vehicles/14/",
+                                    "https://swapi.co/api/vehicles/30/",
+                                  ]
+            }
+/>,
+        ],
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "CardContainer",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "birth_year": "19BBY",
+            "created": "2014-12-09T13:50:51.644000Z",
+            "edited": "2014-12-20T21:17:56.891000Z",
+            "eye_color": "blue",
+            "films": Array [
+              "https://swapi.co/api/films/2/",
+              "https://swapi.co/api/films/6/",
+              "https://swapi.co/api/films/3/",
+              "https://swapi.co/api/films/1/",
+              "https://swapi.co/api/films/7/",
+            ],
+            "gender": "male",
+            "hair_color": "blond",
+            "height": "172",
+            "homeworld": "https://swapi.co/api/planets/1/",
+            "mass": "77",
+            "name": "Luke Skywalker",
+            "skin_color": "fair",
+            "species": Array [
+              "https://swapi.co/api/species/1/",
+            ],
+            "starships": Array [
+              "https://swapi.co/api/starships/12/",
+              "https://swapi.co/api/starships/22/",
+            ],
+            "url": "https://swapi.co/api/people/1/",
+            "vehicles": Array [
+              "https://swapi.co/api/vehicles/14/",
+              "https://swapi.co/api/vehicles/30/",
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
-        "ref": null,
-        "rendered": "CardContainer",
-        "type": "h1",
-      },
+      ],
       "type": "div",
     },
   ],
