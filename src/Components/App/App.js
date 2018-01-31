@@ -26,11 +26,13 @@ class App extends Component {
     const opening = this.getRandomFilm(mockData.films.results);
     const people = mockData.people.results;
     const planets = mockData.planets.results;
+    const vehicles = mockData.vehicles.results;
 
     this.setState({
       opening,
       people,
-      planets
+      planets,
+      vehicles
     })
   }
   

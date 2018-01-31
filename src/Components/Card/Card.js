@@ -4,8 +4,7 @@ import './Card.css';
 const Card = ({ type, item }) => {
   const details = { ...item } 
   let { name, population } = details
-  let { homeworld, species } = details
-  let { terrain, climate, residents } = details
+  let { homeworld, species, terrain, climate, residents, model, vehicle_class, passengers } = details
 
   const peopleDetails =  
     <div>
@@ -26,11 +25,22 @@ const Card = ({ type, item }) => {
       </ul>
     </div>
 
+  const vehicleDetails = 
+    <div>
+      <ul>
+        <li>Model: { model }</li>
+        <li>Class: { vehicle_class }</li>
+        <li>Number of Passengers: { passengers }</li>
+      </ul>
+    </div>
+
   const cardRendered = () => {
     if(type === 'people') {
       return peopleDetails;
     } else if(type === 'planets') {
       return planetDetails;
+    } else if(type === 'vehicles') {
+      return vehicleDetails;
     }
   }
 
