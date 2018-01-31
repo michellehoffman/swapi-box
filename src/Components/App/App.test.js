@@ -19,6 +19,7 @@ describe('App', () => {
 
   it.skip('should have a default state', () => {
     const expected = {
+      opening: null,
       people: [],
       favorites: [],
       current: null
