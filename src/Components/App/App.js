@@ -12,6 +12,7 @@ class App extends Component {
     this.state = {
       opening: null,
       people: [],
+      planets: [],
       favorites: [],
       current: null
     }
@@ -24,10 +25,12 @@ class App extends Component {
   setData = () => {
     const opening = this.getRandomFilm(mockData.films.results);
     const people = mockData.people.results;
+    const planets = mockData.planets.results;
 
     this.setState({
       opening,
-      people
+      people,
+      planets
     })
   }
   
@@ -54,7 +57,8 @@ class App extends Component {
         
         {
           this.state.current &&
-          <CardContainer arrayToDisplay={ this.currentArray() } />
+          <CardContainer arrayToDisplay={ this.currentArray() } 
+                         type={this.state.current} />
         }
         
       </div>
