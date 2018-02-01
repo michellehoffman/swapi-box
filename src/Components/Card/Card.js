@@ -1,9 +1,9 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ type, item, addFavorite }) => {
+const Card = ({ item, addFavorite }) => {
   const details = { ...item } 
-  const { name } = details;
+  const { name, type } = details;
   const setClass = (item.favorite === "true") ? "active" : "inactive"
 
   const peopleDetails = (details) => {

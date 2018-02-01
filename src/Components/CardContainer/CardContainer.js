@@ -5,7 +5,6 @@ import './CardContainer.css';
 const CardContainer = ({ arrayToDisplay, type, addFavorite }) => {
   const cards = () => arrayToDisplay.map( item => (
     <Card item={ item } 
-          type={ item.type } 
           addFavorite={ addFavorite } />)
   )
   const displayContent = arrayToDisplay ? cards() : "no favorites"
