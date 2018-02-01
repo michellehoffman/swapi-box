@@ -33,6 +33,7 @@ ShallowWrapper {
                 "https://swapi.co/api/starships/12/",
                 "https://swapi.co/api/starships/22/",
               ],
+              "type": "people",
               "url": "https://swapi.co/api/people/1/",
               "vehicles": Array [
                 "https://swapi.co/api/vehicles/14/",
@@ -84,6 +85,7 @@ ShallowWrapper {
                                 "https://swapi.co/api/starships/12/",
                                 "https://swapi.co/api/starships/22/",
                               ],
+                              "type": "people",
                               "url": "https://swapi.co/api/people/1/",
                               "vehicles": Array [
                                 "https://swapi.co/api/vehicles/14/",
@@ -91,7 +93,7 @@ ShallowWrapper {
                               ],
                             }
           }
-          type={undefined}
+          type="people"
 />,
       ],
     },
@@ -129,13 +131,14 @@ ShallowWrapper {
               "https://swapi.co/api/starships/12/",
               "https://swapi.co/api/starships/22/",
             ],
+            "type": "people",
             "url": "https://swapi.co/api/people/1/",
             "vehicles": Array [
               "https://swapi.co/api/vehicles/14/",
               "https://swapi.co/api/vehicles/30/",
             ],
           },
-          "type": undefined,
+          "type": "people",
         },
         "ref": null,
         "rendered": null,
@@ -180,6 +183,7 @@ ShallowWrapper {
                                       "https://swapi.co/api/starships/12/",
                                       "https://swapi.co/api/starships/22/",
                                     ],
+                                    "type": "people",
                                     "url": "https://swapi.co/api/people/1/",
                                     "vehicles": Array [
                                       "https://swapi.co/api/vehicles/14/",
@@ -187,7 +191,7 @@ ShallowWrapper {
                                     ],
                                   }
             }
-            type={undefined}
+            type="people"
 />,
         ],
       },
@@ -225,13 +229,14 @@ ShallowWrapper {
                 "https://swapi.co/api/starships/12/",
                 "https://swapi.co/api/starships/22/",
               ],
+              "type": "people",
               "url": "https://swapi.co/api/people/1/",
               "vehicles": Array [
                 "https://swapi.co/api/vehicles/14/",
                 "https://swapi.co/api/vehicles/30/",
               ],
             },
-            "type": undefined,
+            "type": "people",
           },
           "ref": null,
           "rendered": null,

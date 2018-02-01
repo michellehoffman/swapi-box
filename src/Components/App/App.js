@@ -42,7 +42,7 @@ class App extends Component {
     return array[randomNum];
   }
 
-  dataToDisplay = element => this.setState({ current: element });
+  dataToDisplay = element => this.setState({ current: element })
 
   currentArray = () => {
     const current = this.state.current;
@@ -71,7 +71,6 @@ class App extends Component {
         {
           this.state.current &&
           <CardContainer arrayToDisplay={ this.currentArray() } 
-                         type={this.state.current}
                          addFavorite={this.addFavorite} />
         }
         

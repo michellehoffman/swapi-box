@@ -11,13 +11,14 @@ class Controls extends Component {
   }
 
   getElement = e => {
-    const value = e.target.innerText;
+    let value = e.target.innerText;
+    value = value.includes('favorites') ? 'favorites' : value
 
     this.setState({ active: value });
     this.props.dataToDisplay(value);
   }
 
-  setClass(buttonType) {
+  setClass = buttonType => {
     return buttonType === this.state.active ? 'active' : 'inactive';
   }
 
@@ -37,7 +38,8 @@ class Controls extends Component {
                   onClick={ this.getElement }>vehicles</button>
         </div>
         <div>
-          <button className={ this.setClass('favorites') }>favorites <span>{ this.num() }</span></button>
+          <button className={ this.setClass('favorites') }
+                  onClick={ this.getElement }>favorites <span>{ this.num() }</span></button>
         </div>
       </div> 
     )
