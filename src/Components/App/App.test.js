@@ -44,5 +44,15 @@ describe('App', () => {
     expect(wrapper.instance().getRandomFilm(crawlData)).toEqual(expected);
   });
 
+  it('should set the state of favorites', () => {
+    const person = {
+      "name": "Michelle",
+      "job": "student"
+    }
+
+    wrapper.instance().addFavorite(person);
+
+    expect(wrapper.state('favorites')).toEqual([person]);
+  })
 });
 

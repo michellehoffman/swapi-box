@@ -50,6 +50,10 @@ class App extends Component {
     return this.state[current];
   }
 
+  addFavorite = card => (
+    this.setState({ favorites: [...this.state.favorites, card] })
+  )
+
   render() {
     return (
       <div className="app">
@@ -60,7 +64,8 @@ class App extends Component {
         {
           this.state.current &&
           <CardContainer arrayToDisplay={ this.currentArray() } 
-                         type={this.state.current} />
+                         type={this.state.current}
+                         addFavorite={this.addFavorite} />
         }
         
       </div>

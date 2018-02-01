@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css';
 
-const Card = ({ type, item }) => {
+const Card = ({ type, item, addFavorite }) => {
   const details = { ...item } 
   const { name } = details;
 
@@ -10,9 +10,9 @@ const Card = ({ type, item }) => {
 
     return (
       <div>
-        <li>Homeworld: {homeworld}</li>
-        <li>Species: {species}</li>
-        <li>Population: {population}</li>
+        <li>Homeworld: { homeworld }</li>
+        <li>Species: { species }</li>
+        <li>Population: { population }</li>
       </div>
     )
   }
@@ -22,10 +22,10 @@ const Card = ({ type, item }) => {
 
     return (
       <div>
-        <li>Terrain: {terrain}</li>
-        <li>Climate: {climate}</li>
-        <li>Population: {population}</li>
-        <li>Residents: {residents}</li>
+        <li>Terrain: { terrain }</li>
+        <li>Climate: { climate }</li>
+        <li>Population: { population }</li>
+        <li>Residents: { residents }</li>
       </div>
     )
   }
@@ -52,13 +52,17 @@ const Card = ({ type, item }) => {
     }
   }
 
+  const addFavoriteCard = () => {
+    addFavorite(item);
+  }
+
   return (
     <div>
       <h2>{ name }</h2>
       <ul>
         { cardRendered() }
       </ul>
-      <button>+</button>
+      <button onClick={ addFavoriteCard }>+</button>
     </div>
   )
 }
