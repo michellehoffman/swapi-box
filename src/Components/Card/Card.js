@@ -4,6 +4,7 @@ import './Card.css';
 const Card = ({ type, item, addFavorite }) => {
   const details = { ...item } 
   const { name } = details;
+  const setClass = (item.favorite === "true") ? "active" : "inactive"
 
   const peopleDetails = (details) => {
     const { homeworld, species, population } = details;
@@ -54,15 +55,6 @@ const Card = ({ type, item, addFavorite }) => {
 
   const addFavoriteCard = e => {
     addFavorite(item);
-    setClass(e);
-  }
-
-  const setClass = e => {
-    if(e.target.className === 'inactive') {
-      e.target.className = 'active';
-    } else {
-      e.target.className = 'inactive';
-    }
   }
 
   return (
@@ -71,7 +63,7 @@ const Card = ({ type, item, addFavorite }) => {
       <ul>
         { cardRendered() }
       </ul>
-      <button className="inactive" onClick={ addFavoriteCard }>+</button>
+      <button className={ setClass } onClick={ addFavoriteCard }>+</button>
     </div>
   )
 }

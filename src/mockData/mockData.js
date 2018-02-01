@@ -35,7 +35,8 @@ const mockData = {
         "created": "2014-12-09T13:50:51.644000Z", 
         "edited": "2014-12-20T21:17:56.891000Z", 
         "url": "https://swapi.co/api/people/1/",
-        "type": "people"
+        "type": "people",
+        "favorite": "false"
       }
     ]
   },
@@ -66,7 +67,8 @@ const mockData = {
         "created": "2014-12-10T11:35:48.479000Z", 
         "edited": "2014-12-20T20:58:18.420000Z", 
         "url": "https://swapi.co/api/planets/2/",
-        "type": "planets"
+        "type": "planets",
+        "favorite": "false"
       }
     ]
   },
@@ -95,7 +97,8 @@ const mockData = {
         "created": "2014-12-10T15:36:25.724000Z", 
         "edited": "2014-12-22T18:21:15.523587Z", 
         "url": "https://swapi.co/api/vehicles/4/",
-        "type": "vehicles"
+        "type": "vehicles",
+        "favorite": "false"
       }
     ]
   },
