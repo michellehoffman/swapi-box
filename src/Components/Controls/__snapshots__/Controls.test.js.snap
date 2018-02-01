@@ -41,6 +41,7 @@ ShallowWrapper {
         <div>
           <button
                     className="inactive"
+                    onClick={[Function]}
           >
                     favorites 
                     <span />
@@ -127,6 +128,7 @@ ShallowWrapper {
         "props": Object {
           "children": <button
             className="inactive"
+            onClick={[Function]}
 >
             favorites 
             <span />
@@ -143,6 +145,7 @@ ShallowWrapper {
               <span />,
             ],
             "className": "inactive",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": Array [
@@ -196,6 +199,7 @@ ShallowWrapper {
           <div>
             <button
                         className="inactive"
+                        onClick={[Function]}
             >
                         favorites 
                         <span />
@@ -282,6 +286,7 @@ ShallowWrapper {
           "props": Object {
             "children": <button
               className="inactive"
+              onClick={[Function]}
 >
               favorites 
               <span />
@@ -298,6 +303,7 @@ ShallowWrapper {
                 <span />,
               ],
               "className": "inactive",
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": Array [

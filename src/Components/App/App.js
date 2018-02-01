@@ -42,13 +42,24 @@ class App extends Component {
     return array[randomNum];
   }
 
-  dataToDisplay = element => this.setState({ current: element });
+  dataToDisplay = element => this.setState({ current: element })
 
   currentArray = () => {
     const current = this.state.current;
 
     return this.state[current];
   }
+
+  addFavorite = card => {
+    const favorites = this.state.favorites;
+    const match = favorites.find( item => item === card );
+    const remainingCards = this.removeFavorite(favorites, card);  
+    const updatedFavorites = match ? remainingCards : [ ...favorites, card ]
+
+    this.setState({ favorites: updatedFavorites });
+  }
+
+  removeFavorite = (array, card) => array.filter( item => item !== card )
 
   render() {
     return (
@@ -60,7 +71,7 @@ class App extends Component {
         {
           this.state.current &&
           <CardContainer arrayToDisplay={ this.currentArray() } 
-                         type={this.state.current} />
+                         addFavorite={this.addFavorite} />
         }
         
       </div>
