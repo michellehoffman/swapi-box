@@ -50,11 +50,19 @@ class App extends Component {
     return this.state[current];
   }
 
+  updateFavorites = (favorites, card) => {
+    const match = favorites.find( item => item === card );
+    
+    card.favorite = match ? "false" : "true"
+    
+    const remainingCards = this.removeFavorite(favorites, card);
+    
+    return match ? remainingCards : [ ...favorites, card ];
+  }
+
   addFavorite = card => {
     const favorites = this.state.favorites;
-    const match = favorites.find( item => item === card );
-    const remainingCards = this.removeFavorite(favorites, card);  
-    const updatedFavorites = match ? remainingCards : [ ...favorites, card ]
+    const updatedFavorites = this.updateFavorites(favorites, card);    
 
     this.setState({ favorites: updatedFavorites });
   }
