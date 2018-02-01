@@ -52,8 +52,17 @@ const Card = ({ type, item, addFavorite }) => {
     }
   }
 
-  const addFavoriteCard = () => {
+  const addFavoriteCard = e => {
     addFavorite(item);
+    setClass(e);
+  }
+
+  const setClass = e => {
+    if(e.target.className === 'inactive') {
+      e.target.className = 'active';
+    } else {
+      e.target.className = 'inactive';
+    }
   }
 
   return (
@@ -62,7 +71,7 @@ const Card = ({ type, item, addFavorite }) => {
       <ul>
         { cardRendered() }
       </ul>
-      <button onClick={ addFavoriteCard }>+</button>
+      <button className="inactive" onClick={ addFavoriteCard }>+</button>
     </div>
   )
 }
