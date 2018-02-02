@@ -4,6 +4,7 @@ import mockData from '../../mockData/mockData';
 import OpeningCrawl from '../OpeningCrawl/OpeningCrawl';
 import Controls from '../Controls/Controls';
 import CardContainer from '../CardContainer/CardContainer';
+import { getFilms, getPeople, getPlanets, getVehicles } from '../../apiHelper.js';
 
 class App extends Component {
   constructor() {
@@ -22,11 +23,12 @@ class App extends Component {
     this.setData()
   }
 
-  setData = () => {
-    const opening = this.getRandomFilm(mockData.films.results);
-    const people = mockData.people.results;
-    const planets = mockData.planets.results;
-    const vehicles = mockData.vehicles.results;
+  setData = async() => {
+    const filmArray = await getFilms();
+    const opening = await this.getRandomFilm(filmArray);
+    const people = await getPeople();
+    const planets = await getPlanets();
+    const vehicles = await getVehicles();
 
     this.setState({
       opening,
@@ -79,7 +81,7 @@ class App extends Component {
         {
           this.state.current &&
           <CardContainer arrayToDisplay={ this.currentArray() } 
-                         addFavorite={this.addFavorite} />
+                         addFavorite={ this.addFavorite } />
         }
         
       </div>
