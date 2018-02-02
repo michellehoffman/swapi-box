@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import mockData from '../../mockData/mockData';
 import OpeningCrawl from '../OpeningCrawl/OpeningCrawl';
 import Controls from '../Controls/Controls';
 import CardContainer from '../CardContainer/CardContainer';

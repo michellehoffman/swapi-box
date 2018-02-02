@@ -55,7 +55,7 @@ export const getPeople = async () => {
   const response = await fetch(`${url}/people/`);
   const { results } = await response.json();
   const cleaned = cleanPeople(results)
-  const person = await getData(cleaned, "homeworld");
+  const person = await getPeopleData(cleaned);
 
   return person;
 }
@@ -78,7 +78,7 @@ const cleanPeople = people => {
   }, [])
 }
 
-const getData = arrayOfPeople => {
+const getPeopleData = arrayOfPeople => {
   const unresolvedPromises = arrayOfPeople.map(async (person) => {
     let response = await fetch(person.homeworld);
     let world = await response.json();
@@ -86,7 +86,7 @@ const getData = arrayOfPeople => {
     let population = world.population;
     let species = await getSpecies(person);
     
-    return {...person, homeworld, species, population}
+    return { ...person, homeworld, species, population }
   })
   return Promise.all(unresolvedPromises);
 }
@@ -126,22 +126,57 @@ const getSpecies = async (person) => {
 export const getPlanets = async () => {
   const response = await fetch(`${url}/planets/`);
   const { results } = await response.json();
-  // const residents = getPlanetsHelper(results);
+  const cleaned = await cleanPlanets(results);
+  const planets = await getResidents(cleaned);
 
-  return results;
+  return planets
 }
 
-// const getPlanetsHelper = planetsArray => {
-//   const unresolvedPromises = planetsArray.map( planet => {
-//     const unresolvedResidents = planet.residents.map(async (resident) => {
-//       let initialFetch = await fetch(resident);
-//       let person = initialFetch.json()
+const cleanPlanets = planets => {
+  return planets.reduce(( acc, planet ) => {
+    const { name, terrain, population, climate, residents} = planet
+    const cleanedPlanet = {
+      name,
+      terrain,
+      population,
+      climate,
+      residents
+    }
 
-//       return { ...person, ...planetsArray}
-//     })
-//     return Promise.all(unresolvedResidents);
-//   })
-//   return Promise.all(unresolvedPromises);
-// }
+    acc = [...acc, cleanedPlanet]
 
+    return acc
+  },[])
+}
+
+const getResidents = async (planetsArray) => {
+  const unresolvedPromises = planetsArray.map( async (planet) => {
+    if (!planet.residents.length) {
+      planet.residents = []
+      return planet
+    }
+
+    let namesArray;
+    let names = await getSingleResident(planet.residents, namesArray)
+    let array = [...names]
+
+    let residents = array.map( obj => obj.name)
+
+    planet = {...planet, residents}
+
+    return planet
+  })
+  return Promise.all(unresolvedPromises)
+}
+
+const getSingleResident = (array, newArray) => {
+  const unresolvedResidents = array.map( async (resident) => {
+      let response = await fetch(resident);
+      let { name } = await response.json();
+      let residents = {...newArray, name};
+
+      return residents
+    })
+  return Promise.all(unresolvedResidents)
+}
 

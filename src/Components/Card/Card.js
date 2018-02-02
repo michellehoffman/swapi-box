@@ -14,10 +14,28 @@ const Card = ({ item, addFavorite }) => {
 
   const renderedDetails = () =>{
     const keys = Object.keys(item);
+    let residentKey = keys.find( key => key === 'residents');
+    
+    if(residentKey && item.residents.length) {
+      const list = item.residents.map( resident => <li>{resident}</li>)
+
+      item.residents = (
+        <div>
+          <ul>
+          {list}
+          </ul>
+        </div>
+      )
+    }
+
     const cleanedKeys = cleanKeys(keys)
     
     return cleanedKeys.map( detail => {
-      return <li>{ detail }: { item[detail] }</li>
+      return (
+        <div>
+        <li>{ detail }: { item[detail] }</li>
+        </div>
+      )
     })
   }
 
