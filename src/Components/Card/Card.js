@@ -3,54 +3,40 @@ import './Card.css';
 
 const Card = ({ item, addFavorite }) => {
   const details = { ...item } 
-  const { name, type } = details;
-  const setClass = (item.favorite === "true") ? "active" : "inactive"
+  const { name } = details;
+  const setClass = (item.favorite === "true") ? "active" : "inactive";
 
-  const peopleDetails = (details) => {
-    const { homeworld, species, population } = details;
-
-    return (
-      <div>
-        <li>Homeworld: { homeworld }</li>
-        <li>Species: { species }</li>
-        <li>Population: { population }</li>
-      </div>
-    )
+  const cleanKeys = keys => {
+    return keys.filter( key => {
+      return key !== "name" && key !== "type" && key !== "favorite";
+    })
   }
 
-  const planetDetails = (details) => {
-    const { terrain, climate, population, residents } = details;
+  const renderedDetails = () =>{
+    const keys = Object.keys(item);
+    let residentKey = keys.find( key => key === 'residents');
+    
+    if(residentKey && item.residents.length) {
+      const list = item.residents.map( resident => <li>{resident}</li>)
 
-    return (
-      <div>
-        <li>Terrain: { terrain }</li>
-        <li>Climate: { climate }</li>
-        <li>Population: { population }</li>
-        <li>Residents: { residents }</li>
-      </div>
-    )
-  }
-
-  const vehicleDetails = (details) => {
-    const { model, vehicle_class, passengers } = details;
-
-    return (
-      <div>
-        <li>Model: { model }</li>
-        <li>Class: { vehicle_class }</li>
-        <li>Number of Passengers: { passengers }</li>
-      </div>
-    )
-  }
-
-  const cardRendered = () => {
-    if(type === 'people') {
-      return peopleDetails(details);
-    } else if(type === 'planets') {
-      return planetDetails(details);
-    } else if(type === 'vehicles') {
-      return vehicleDetails(details);
+      item.residents = (
+        <div>
+          <ul>
+          {list}
+          </ul>
+        </div>
+      )
     }
+
+    const cleanedKeys = cleanKeys(keys)
+    
+    return cleanedKeys.map( detail => {
+      return (
+        <div>
+        <li>{ detail }: { item[detail] }</li>
+        </div>
+      )
+    })
   }
 
   const addFavoriteCard = e => {
@@ -61,7 +47,7 @@ const Card = ({ item, addFavorite }) => {
     <div>
       <h2>{ name }</h2>
       <ul>
-        { cardRendered() }
+        { renderedDetails() }
       </ul>
       <button className={ setClass } onClick={ addFavoriteCard }>+</button>
     </div>
