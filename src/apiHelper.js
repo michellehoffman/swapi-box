@@ -20,11 +20,18 @@ const cleanFilms = films => {
 }
 
 export const getFilms = async () => {
-  const response = await fetch(`${url}/films/`);
-  const { results } = await response.json();
-  const cleaned = cleanFilms(results);
-  
-  return cleaned
+  try {
+    const response = await fetch(`${url}/films/`);
+    const { results } = await response.json();
+    const cleaned = cleanFilms(results);
+    
+    return cleaned
+  } 
+
+  catch (error) {
+    throw Error;
+  }
+
 }
 
 
@@ -51,11 +58,18 @@ const cleanVehicles = vehicles => {
 }
 
 export const getVehicles = async () => {
-  const response = await fetch(`${url}/vehicles/`);
-  const { results } = await response.json();
-  const cleaned = cleanVehicles(results);
+  try {
+    const response = await fetch(`${url}/vehicles/`);
+    const { results } = await response.json();
+    const cleaned = cleanVehicles(results);
 
-  return cleaned;
+    return cleaned;
+  }
+
+  catch (error) {
+    throw Error;
+  }
+ 
 }
 
 
@@ -82,31 +96,51 @@ const cleanPeople = people => {
 }
 
 export const getSpecies = async (person) => {
-  const response = await fetch(person.species);
-  const { name } = await response.json();
-  
-  return name
+  try {
+    const response = await fetch(person.species);
+    const { name } = await response.json();
+    
+    return name
+  }
+
+  catch (error) {
+    throw Error;
+  }
+
 } 
 
 export const getPeopleData = arrayOfPeople => {
   const unresolvedPromises = arrayOfPeople.map(async (person) => {
-    const response = await fetch(person.homeworld);
-    const { name, population } = await response.json();
-    const homeworld = name
-    const species = await getSpecies(person)
-    
-    return { ...person, homeworld, species, population }
+    try {
+      const response = await fetch(person.homeworld);
+      const { name, population } = await response.json();
+      const homeworld = name
+      const species = await getSpecies(person)
+      
+      return { ...person, homeworld, species, population }
+    }
+
+    catch (error) {
+      throw Error
+    }
+
   })
   return Promise.all(unresolvedPromises);
 }
 
 export const getPeople = async () => {
-  const response = await fetch(`${url}/people/`);
-  const { results } = await response.json();
-  const cleaned = cleanPeople(results)
-  const person = await getPeopleData(cleaned);
+  try {
+    const response = await fetch(`${url}/people/`);
+    const { results } = await response.json();
+    const cleaned = cleanPeople(results)
+    const person = await getPeopleData(cleaned);
 
-  return person;
+    return person;    
+  }
+
+  catch (error) {
+    throw Error
+  }
 }
 
 
@@ -136,12 +170,19 @@ const cleanPlanets = planets => {
 
 export const getResidents = (array = [], newArray) => {
   const unresolvedResidents = array.map( async (resident) => {
+    try {
       let response = await fetch(resident);
       let { name } = await response.json();
       let residents = { ...newArray, name };
 
-      return residents
-    })
+      return residents 
+    }
+
+    catch (error) {
+      throw Error;
+    }
+
+  })
   return Promise.all(unresolvedResidents)
 }
 
@@ -157,10 +198,17 @@ const getPlanetData = planetsArray => {
 }
 
 export const getPlanets = async () => {
-  const response = await fetch(`${url}/planets/`);
-  const { results } = await response.json();
-  const cleaned = await cleanPlanets(results);
-  const planets = await getPlanetData(cleaned);
+  try {
+    const response = await fetch(`${url}/planets/`);
+    const { results } = await response.json();
+    const cleaned = await cleanPlanets(results);
+    const planets = await getPlanetData(cleaned);
 
-  return planets
+    return planets
+  }
+
+  catch (error) {
+    throw Error;
+  }
+
 }
