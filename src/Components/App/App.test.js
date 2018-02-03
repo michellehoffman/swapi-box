@@ -17,10 +17,12 @@ describe('App', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it.skip('should have a default state', () => {
+  it('should have a default state', () => {
     const expected = {
       opening: null,
       people: [],
+      planets: [],
+      vehicles: [],
       favorites: [],
       current: null
     }
