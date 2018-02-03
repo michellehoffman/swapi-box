@@ -13,13 +13,14 @@ class App extends Component {
       opening: null,
       people: [],
       planets: [],
+      vehicles: [],
       favorites: [],
       current: null
     }
   }
 
   componentDidMount() {
-    this.setData()
+    // this.setData();
   }
 
   setData = async() => {
