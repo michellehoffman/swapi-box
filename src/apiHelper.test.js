@@ -49,6 +49,14 @@ describe('getFilms', () => {
     expect(getFilms()).resolves.toEqual(mockFilms);
   }); 
 
+  it('should throw an error if bad status code', () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      status: 500,
+    }));
+
+    expect(getFilms()).rejects.toEqual(Error)
+  });
+
 });
 
 describe('getVehicles', () => {
@@ -110,6 +118,14 @@ describe('getVehicles', () => {
     expect(getVehicles()).resolves.toEqual(mockVehicles);
   }); 
 
+  it('should throw an error if bad status code', () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      status: 500,
+    }));
+
+    expect(getVehicles()).rejects.toEqual(Error)
+  });
+
 });
 
 describe('getSpecies', () => {
@@ -158,6 +174,22 @@ describe('getSpecies', () => {
     }
 
     expect(getSpecies(mockPerson)).resolves.toEqual('human');
+  });
+
+  it('should throw an error if bad status code', () => {
+    const mockPerson = {
+      name: "Luke Skywalker",
+      homeworld: 'Somewhere',
+      species: "https://swapi.co/api/species/1/",
+      population: 30000,
+      type: "people",
+      favorite: false
+    }
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      status: 500,
+    }));
+
+    expect(getSpecies(mockPerson)).rejects.toEqual(Error)
   });
 
 });
@@ -216,6 +248,24 @@ describe('getPeopleData', () => {
     expect(getPeopleData(mockPeople)).resolves.toEqual(expected);
   });
 
+  it('should throw an error if bad status code', () => {
+    const mockPeople = [
+      {
+        name: "Luke Skywalker",
+        homeworld: "https://swapi.co/api/planets/1/",
+        species: "https://swapi.co/api/species/1/",
+        population: undefined,
+        type: "people",
+        favorite: false,
+      }
+    ]
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      status: 500,
+    }));
+
+    expect(getPeopleData(mockPeople)).rejects.toEqual(Error)
+  });
+
 });
 
 describe('getPeople', () => {
@@ -261,6 +311,14 @@ describe('getPeople', () => {
     expect(getPeople()).resolves.toEqual(mockPeople);
   });
 
+  it('should throw an error if bad status code', () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      status: 500,
+    }));
+
+    expect(getPeople()).rejects.toEqual(Error)
+  });
+
 });
 
 describe('getResidents', () => {
@@ -286,6 +344,15 @@ describe('getResidents', () => {
     const mockResidents = ["https://swapi.co/api/people/1/"]
 
     expect(getResidents(mockResidents, [])).resolves.toEqual([{name: "Leia Organa"}]);
+  });
+
+  it('should throw an error if bad status code', () => {
+    const mockResidents = ["https://swapi.co/api/people/1/"]
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      status: 500,
+    }));
+
+    expect(getResidents(mockResidents, [])).rejects.toEqual(Error)
   });
 
 });
@@ -329,6 +396,14 @@ describe('getPlanets', () => {
     }]
 
     expect(getPlanets()).resolves.toEqual(mockPlanets);
+  });
+
+  it('should throw an error if bad status code', () => {
+    window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+      status: 500,
+    }));
+
+    expect(getPlanets()).rejects.toEqual(Error)
   });
 
 });
