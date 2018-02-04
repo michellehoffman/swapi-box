@@ -1,50 +1,40 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Controls.css';
 
-class Controls extends Component {
-  constructor(props) {
-    super(props);
+const Controls = ({ favorites, setCurrent, active }) => {
+  const setClass = category => (
+    category === active ? ' controls active' : 'controls'
+  )
 
-    this.state = {
-      active: null
-    }
+  const updateCurrent = (e) => {
+    const value = e.target.innerText;
+    const category = value.includes('favorites') ? 'favorites' : value
+
+    setCurrent(category);
   }
 
-  getElement = e => {
-    let value = e.target.innerText;
-    value = value.includes('favorites') ? 'favorites' : value
+  const numberOfFavorites =  favorites ? favorites.length : 0;
 
-    this.setState({ active: value });
-    this.props.dataToDisplay(value);
-  }
-
-  setClass = buttonType => {
-    return buttonType === this.state.active ? ' controls active' : 'controls inactive';
-  }
-
-  num = () => {
-    return this.props.favorites ? this.props.favorites.length : 0;
-  } 
-
-  render() {
     return (
       <div>
         <div>
-          <button className={ this.setClass('people') } 
-                  onClick={ this.getElement }>people</button>
-          <button className={ this.setClass('planets') }
-                  onClick={ this.getElement }>planets</button>
-          <button className={ this.setClass('vehicles') } 
-                  onClick={ this.getElement }>vehicles</button>
+          <button className={ setClass('people') } 
+                  onClick={ updateCurrent }>people</button>
+          <button className={ setClass('planets') }
+                  onClick={ updateCurrent }>planets</button>
+          <button className={ setClass('vehicles') }
+                  onClick={ updateCurrent }>vehicles</button>
         </div>
         <div>
-          <button className={ this.setClass('favorites') }
+          <button className={ setClass('favorites') }
                   id="favorites-button"
-                  onClick={ this.getElement }>favorites <span id="num-faves">{ this.num() }</span></button>
+                  onClick={ updateCurrent }>
+                  favorites 
+                  <span id="num-faves">{ numberOfFavorites }</span>
+          </button>
         </div>
       </div> 
     )
-  }
 }
 
 export default Controls;

@@ -3,16 +3,15 @@ import Card from '../Card/Card';
 import './CardContainer.css';
 
 const CardContainer = ({ arrayToDisplay, addFavorite }) => {
-  const cards = () => arrayToDisplay.map( item => (
+  const renderCards = arrayToDisplay.map( item => (
     <Card item={ item }
-          addFavorite={ addFavorite } /> )
+          addFavorite={ addFavorite }
+          key={ Date.now() + item.name } /> )
   )
 
-  const displayContent = arrayToDisplay ? cards() : "no favorites"
-
   return (
-    <div class="card-container">
-      { displayContent }
+    <div className="card-container">
+      { renderCards }
     </div>
   )
 }
