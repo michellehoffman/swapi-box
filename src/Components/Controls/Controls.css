@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit:800,900');
 
 .controls {
+  background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(255, 232, 31, 1);
-  background-color: transparent;
-  padding: 10px 20px;
   font-family: 'Kanit', sans-serif;
   font-size: 1.6rem;
-  margin: 10px;
-  color: rgba(255, 232, 31, 1);
-  margin-bottom: 50px;
+  margin: 10px 10px 30px 10px;
+  padding: 10px 20px;
 }
 
-.active {
-  background-color: rgba(255, 232, 31, 1);
-  color: black;
+.controls,
+.active #num-faves {
+  color: rgba(255, 232, 31, 1);  
 }
 
 #favorites-button {
@@ -23,14 +21,16 @@
 }
 
 #num-faves {
-  color: black;
-  background-color: rgba(255, 232, 31, 1);
   padding: 0 10px;
-  margin-left: 5px
+  margin-left: 5px;
+}
+
+#num-faves,
+.active {
+  background-color: rgba(255, 232, 31, 1);
+  color: black;  
 }
 
 .active #num-faves {
-  color: rgba(255, 232, 31, 1);
   background-color: black;
 }
-
