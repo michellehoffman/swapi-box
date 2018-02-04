@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card';
+import { array, func } from 'prop-types';
 import './CardContainer.css';
 
 const CardContainer = ({ arrayToDisplay, addFavorite }) => {
@@ -14,6 +15,11 @@ const CardContainer = ({ arrayToDisplay, addFavorite }) => {
       { renderCards }
     </div>
   )
+}
+
+CardContainer.propTypes = {
+  arrayToDisplay: array.isRequired,
+  addFavorite: func.isRequired
 }
 
 export default CardContainer;

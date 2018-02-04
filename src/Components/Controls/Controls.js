@@ -1,4 +1,5 @@
 import React from 'react';
+import { arrayOf, object, func, string } from 'prop-types';
 import './Controls.css';
 
 const Controls = ({ favorites, setCurrent, active }) => {
@@ -35,6 +36,12 @@ const Controls = ({ favorites, setCurrent, active }) => {
         </div>
       </div> 
     )
+}
+
+Controls.propTypes = {
+  favorites: arrayOf(object.isRequired).isRequired,
+  setCurrent: func.isRequired,
+  active: string.isRequired
 }
 
 export default Controls;
