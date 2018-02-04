@@ -1,13 +1,15 @@
 import React from 'react';
 import './OpeningCrawl.css';
+import logo from '../../images/logo.png'
 
 const OpeningCrawl = ({ title, opening_crawl, release_date }) => {
   return (
-    <div className="crawl">
-      <section>
+    <div>
+      <section className="crawl">
         <article className="crawl-text">{ opening_crawl }</article>
-        <h4 className="film-title">{ title }</h4>
-        <h5 className="release-date">{ release_date }</h5>
+        <p className="film-title">{ title }</p>
+        <p className="release-date">Released: { release_date }</p>
+        <img src={logo} alt="Star Wars logo"/>
       </section>
     </div>
   )

@@ -1,28 +1,36 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Kanit:800,900');
+* {
+  margin: 0px;
+}
+
+.app {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+.explore {
+  background-color: transparent;
+  border: 3px solid rgba(255, 232, 31, 1);
+  color: rgba(255, 232, 31, 1);
+  font-size: 2rem;
+  padding: 20px;
+  text-transform: uppercase;
+  position: relative;
+  top: 200px;
+  font-family: 'Kanit', sans-serif;
 }
 
-.App-intro {
-  font-size: large;
+.hidden {
+  visibility: hidden;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+h1 {
+  font-family: 'Kanit', sans-serif;
+  font-size: 5rem;
+  color: rgba(255, 232, 31, 1);
+}
+
+header {
+  background-color: black;
+  width: 100%;
 }
