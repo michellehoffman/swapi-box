@@ -9,28 +9,31 @@
 }
 
 header {
-  background-color: rgba(9, 9, 11, 1);
+  background-color: black;
   width: 100%;
 }
 
 h1 {
   font-size: 5rem;
+  color: rgba(255, 232, 31, 1);
 }
 
 h1,
-.explore {
-  color: rgba(255, 232, 31, 1);
+.next {
   font-family: 'Kanit', sans-serif;
 }
 
-.explore {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 3px solid rgba(255, 232, 31, 1);
-  font-size: 2rem;
-  padding: 20px;
-  position: relative;
+.next {
+  animation: fade-in 5s;
+  background-color: transparent;
+  border: 1px solid rgba(255, 232, 31, 0.8);
+  color: rgba(255, 232, 31, 0.8);
+  font-size: 1.5rem;
+  padding: 5px 20px;
+  position: absolute;
+  right: 40px;
   text-transform: uppercase;
-  top: 200px;
+  top: 40px;
 }
 
 .opening {
@@ -39,4 +42,17 @@ h1,
 
 .hidden {
   visibility: hidden;
+}
+
+.next:hover {
+  border: 1px solid rgba(255, 232, 31, 1);
+  color: rgba(255, 232, 31, 1);
+
+  
+  
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+  to   { opacity: 1 }
 }

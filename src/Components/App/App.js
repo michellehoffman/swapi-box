@@ -3,6 +3,7 @@ import { getFilms, getPeople, getPlanets, getVehicles } from '../../apiHelper.js
 import OpeningCrawl from '../OpeningCrawl/OpeningCrawl';
 import Controls from '../Controls/Controls';
 import CardContainer from '../CardContainer/CardContainer';
+import { array, arrayOf, bool, object, string, shape } from 'prop-types';
 import './App.css';
 
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
     super();
 
     this.state = {
-      current: null,
+      current: '',
       favorites: [],
       intro: true,
       crawl: null,
@@ -83,7 +84,7 @@ class App extends Component {
 
         {
           this.state.intro && this.state.crawl &&
-          <OpeningCrawl className="opening"{ ...this.state.crawl } />
+          <OpeningCrawl className="opening" { ...this.state.crawl } />
         }
 
         {
@@ -107,6 +108,18 @@ class App extends Component {
       </div>
     );
   }
+}
+
+App.propTypes = {
+  state: shape({
+    current: string.isRequired,
+    favorites: array.isRequired,
+    intro: bool.isRequired,
+    crawl: object.isRequired,
+    people: arrayOf(object.isRequired).isRequired,
+    planets: arrayOf(object.isRequired).isRequired,
+    vehicles: arrayOf(object.isRequired).isRequired
+  })
 }
 
 export default App;

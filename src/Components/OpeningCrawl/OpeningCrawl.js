@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../images/logo.png';
+import { string } from 'prop-types';
 import './OpeningCrawl.css';
 
 const OpeningCrawl = ({ title, opening_crawl, release_date }) => {
@@ -13,6 +14,12 @@ const OpeningCrawl = ({ title, opening_crawl, release_date }) => {
       </section>
     </div>
   )
+}
+
+OpeningCrawl.propTypes = {
+  title: string.isRequired,
+  opening_crawl: string.isRequired,
+  release_date: string.isRequired
 }
 
 export default OpeningCrawl;

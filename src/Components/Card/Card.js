@@ -1,6 +1,7 @@
 import React from 'react';
 import starInactive from '../../images/starInactive.svg';
 import starActive from '../../images/starActive.svg';
+import { object, func } from 'prop-types';
 import './Card.css';
 
 const Card = ({ item, addFavorite }) => {
@@ -22,7 +23,7 @@ const Card = ({ item, addFavorite }) => {
   
     return cleanedKeys.map( detail => {
       return (
-        <div>
+        <div key={ Date.now() + detail }>
           <h4 className="character-detail">{ detail }</h4>  
           <p>{ item[detail] }</p>
         </div>
@@ -62,6 +63,11 @@ const Card = ({ item, addFavorite }) => {
       { renderResidents() }
     </div>
   )
+}
+
+Card.propTypes = {
+  item: object.isRequired,
+  addFavorite: func.isRequired
 }
 
 export default Card;
