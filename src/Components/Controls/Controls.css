@@ -1,3 +1,36 @@
-.active {
-  color: red;
+@import url('https://fonts.googleapis.com/css?family=Kanit:800,900');
+
+.controls {
+  border: 1px solid rgba(255, 232, 31, 1);
+  background-color: transparent;
+  padding: 10px 20px;
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.6rem;
+  margin: 10px;
+  color: rgba(255, 232, 31, 1);
+  margin-bottom: 50px;
 }
+
+.active {
+  background-color: rgba(255, 232, 31, 1);
+  color: black;
+}
+
+#favorites-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+#num-faves {
+  color: black;
+  background-color: rgba(255, 232, 31, 1);
+  padding: 0 10px;
+  margin-left: 5px
+}
+
+.active #num-faves {
+  color: rgba(255, 232, 31, 1);
+  background-color: black;
+}
+
