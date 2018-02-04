@@ -83,7 +83,7 @@ class App extends Component {
 
         {
           this.state.intro && this.state.crawl &&
-          <OpeningCrawl className="opening"{ ...this.state.crawl } />
+          <OpeningCrawl className="opening" { ...this.state.crawl } />
         }
 
         {
