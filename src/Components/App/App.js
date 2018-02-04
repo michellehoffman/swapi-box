@@ -88,15 +88,14 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-
-          <header>
-            <h1>SWAPI-BOX</h1>
-          </header>
-          <button className="explore" onClick={ this.hideButton }>Explore</button>
+        <header>
+          <h1>SWAPI-BOX</h1>
+        </header>
+        <button className="explore" onClick={ this.hideButton }>Explore</button>
 
         {
           this.state.opening && this.state.ready &&
-          <OpeningCrawl { ...this.state.opening } />
+          <OpeningCrawl className="opening"{ ...this.state.opening } />
         }
         
         {

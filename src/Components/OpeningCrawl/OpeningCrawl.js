@@ -1,6 +1,7 @@
 import React from 'react';
 import './OpeningCrawl.css';
-import logo from '../../images/logo.png'
+import logo from '../../images/logo.png';
+
 
 const OpeningCrawl = ({ title, opening_crawl, release_date }) => {
   return (
