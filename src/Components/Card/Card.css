@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+* {
+  margin: 0;
+}
+
+.card {
+  background-color: rgba(0,0,0,0.5);
+  border: 1px solid rgba(255, 232, 31, 1);
+  color: rgba(255, 232, 31, 1);
+  font-family: 'Source Sans Pro', sans-serif;
+  height: 410px;
+  margin: 10px;
+  min-width: 250px;
+  padding: 10px;
+  width: 20%;
+}
+
+.favorite-button {
+  left: 110px;
+  position: relative;
+  top: -55px;
+  width: 30px;
+}
+
+.favorite-button,
+.residents {
+  height: 30px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: -55px 0 20px 0;
+}
+
+.character-detail {
+  font-size: 1.45rem;
+  margin-left: 20px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+p,
+ul {
+  font-size: 1.35rem;
+}
+
+p {
+  margin: 0 0 15px 40px;
+  text-align: left;
+}
+
+.residents {
+  overflow: scroll;
+}
+
+ul {
+  list-style-type: none; 
+  margin-left: -40px;
+}
+

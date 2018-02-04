@@ -10,28 +10,42 @@ class App extends Component {
     super();
 
     this.state = {
+      ready: false,
       opening: null,
-      people: [],
-      planets: [],
-      vehicles: [],
+      people: null,
+      planets: null,
+      vehicles: null,
       favorites: [],
-      current: null
+      current: null,
     }
   }
 
   componentDidMount() {
-    // this.setData();
+    this.loadFilmCrawl();
+    setTimeout(this.setData(), 1000);
   }
 
-  setData = async() => {
+
+  loadFilmCrawl = async () => {
     const filmArray = await getFilms();
     const opening = await this.getRandomFilm(filmArray);
+
+    this.setState({ opening })
+  }
+
+  hideButton = (e) => {
+    e.target.className = "hidden"
+    this.setState({ ready: true })
+
+    setTimeout(() => this.setState({ ready: false, opening: null }), 30000);
+  }
+
+  setData = async () => {
     const people = await getPeople();
     const planets = await getPlanets();
     const vehicles = await getVehicles();
 
     this.setState({
-      opening,
       people,
       planets,
       vehicles
@@ -74,9 +88,21 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <OpeningCrawl { ...this.state.opening } />
-        <Controls favorites={ this.state.favorites }
-                  dataToDisplay={ this.dataToDisplay } />
+        <header>
+          <h1>SWAPI-BOX</h1>
+        </header>
+        <button className="explore" onClick={ this.hideButton }>Explore</button>
+
+        {
+          this.state.opening && this.state.ready &&
+          <OpeningCrawl className="opening"{ ...this.state.opening } />
+        }
+        
+        {
+          !this.state.opening && this.state.people && this.state.planets && this.state.vehicles &&
+            <Controls favorites={ this.state.favorites }
+                    dataToDisplay={ this.dataToDisplay } />
+        }
         
         {
           this.state.current &&

@@ -1,10 +1,12 @@
 import React from 'react';
 import './Card.css';
+import starInactive from '../../images/starInactive.svg';
+import starActive from '../../images/starActive.svg';
 
 const Card = ({ item, addFavorite }) => {
   const details = { ...item } 
   const { name } = details;
-  const setClass = (item.favorite === "true") ? "active" : "inactive";
+  const setFavoriteBtn = (item.favorite === "true") ? starActive : starInactive;
 
   const cleanKeys = keys => {
     return keys.filter( key => {
@@ -16,24 +18,25 @@ const Card = ({ item, addFavorite }) => {
     const keys = Object.keys(item);
     let residentKey = keys.find( key => key === 'residents');
     
-    if(residentKey && item.residents.length) {
+    if(residentKey && item.residents.length > 0) {
       const list = item.residents.map( resident => <li>{resident}</li>)
 
       item.residents = (
-        <div>
+        <div className="residents">
           <ul>
-          {list}
+            {list}
           </ul>
         </div>
       )
-    }
+    } 
 
     const cleanedKeys = cleanKeys(keys)
     
     return cleanedKeys.map( detail => {
       return (
         <div>
-        <li>{ detail }: { item[detail] }</li>
+          <h4 className="character-detail">{ detail }</h4>  
+          <p>{ item[detail] }</p>
         </div>
       )
     })
@@ -44,12 +47,10 @@ const Card = ({ item, addFavorite }) => {
   }
 
   return (
-    <div>
+    <div className="card">
+      <img src={ setFavoriteBtn } className="favorite-button" onClick={ addFavoriteCard } />
       <h2>{ name }</h2>
-      <ul>
-        { renderedDetails() }
-      </ul>
-      <button className={ setClass } onClick={ addFavoriteCard }>+</button>
+      { renderedDetails() }
     </div>
   )
 }

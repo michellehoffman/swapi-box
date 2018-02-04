@@ -19,7 +19,7 @@ class Controls extends Component {
   }
 
   setClass = buttonType => {
-    return buttonType === this.state.active ? 'active' : 'inactive';
+    return buttonType === this.state.active ? ' controls active' : 'controls inactive';
   }
 
   num = () => {
@@ -39,7 +39,8 @@ class Controls extends Component {
         </div>
         <div>
           <button className={ this.setClass('favorites') }
-                  onClick={ this.getElement }>favorites <span>{ this.num() }</span></button>
+                  id="favorites-button"
+                  onClick={ this.getElement }>favorites <span id="num-faves">{ this.num() }</span></button>
         </div>
       </div> 
     )

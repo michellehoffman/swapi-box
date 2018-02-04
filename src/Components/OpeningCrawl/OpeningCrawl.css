@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:800,900');
+
+* {
+  margin: 0px;
+}
+
+.crawl {
+  animation: scroll-up 30s linear normal;
+  font-family: 'Kanit', sans-serif;
+  height: 100%;
+  margin-left: 15%;
+  position: absolute;
+  transform: translateY(800%);
+  width: 70%;
+  z-index: -1;
+}
+
+.crawl-text,
+.film-title,
+.release-date {
+  font-size: 3rem;
+  color: rgba(255, 232, 31);
+  text-align: center;
+}
+
+.film-title {
+  font-size: 5rem;
+  margin-top: 40px 0 0 -5px;
+}
+
+.release-date {
+  margin-left: -10px;
+}
+
+img {
+  margin-top: 70px;
+  width: 500px;
+}
+
+@keyframes scroll-up {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-200%); }
+}

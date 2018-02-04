@@ -11,7 +11,7 @@ const CardContainer = ({ arrayToDisplay, addFavorite }) => {
   const displayContent = arrayToDisplay ? cards() : "no favorites"
 
   return (
-    <div>
+    <div class="card-container">
       { displayContent }
     </div>
   )
