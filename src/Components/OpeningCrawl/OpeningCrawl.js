@@ -1,7 +1,6 @@
 import React from 'react';
-import './OpeningCrawl.css';
 import logo from '../../images/logo.png';
-
+import './OpeningCrawl.css';
 
 const OpeningCrawl = ({ title, opening_crawl, release_date }) => {
   return (
@@ -10,7 +9,7 @@ const OpeningCrawl = ({ title, opening_crawl, release_date }) => {
         <article className="crawl-text">{ opening_crawl }</article>
         <p className="film-title">{ title }</p>
         <p className="release-date">Released: { release_date }</p>
-        <img src={logo} alt="Star Wars logo"/>
+        <img src={ logo } alt="Star Wars logo"/>
       </section>
     </div>
   )

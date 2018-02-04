@@ -1,9 +1,5 @@
 const url = 'https://swapi.co/api'
 
-
-// FILMS
-
-
 const cleanFilms = films => {
   return films.reduce(( acc, film ) => {
     const { title, opening_crawl, release_date } = film
@@ -33,11 +29,6 @@ export const getFilms = async () => {
   }
 
 }
-
-
-// VEHICLES
-
-
 
 const cleanVehicles = vehicles => {
   return vehicles.reduce(( acc, vehicle ) => {
@@ -71,11 +62,6 @@ export const getVehicles = async () => {
   }
  
 }
-
-
-// PEOPLE
-
-
 
 const cleanPeople = people => {
   return people.reduce(( acc, person ) => {
@@ -142,12 +128,6 @@ export const getPeople = async () => {
     throw Error
   }
 }
-
-
-
-// PLANETS
-
-
 
 const cleanPlanets = planets => {
   return planets.reduce(( acc, planet ) => {

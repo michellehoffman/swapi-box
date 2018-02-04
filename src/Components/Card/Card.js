@@ -1,37 +1,25 @@
 import React from 'react';
-import './Card.css';
 import starInactive from '../../images/starInactive.svg';
 import starActive from '../../images/starActive.svg';
+import './Card.css';
 
 const Card = ({ item, addFavorite }) => {
-  const details = { ...item } 
-  const { name } = details;
-  const setFavoriteBtn = (item.favorite === "true") ? starActive : starInactive;
+  const favoriteBtn = (item.favorite === "true") ? starActive : starInactive;
+  const { name } = { ...item } 
 
   const cleanKeys = keys => {
-    return keys.filter( key => {
-      return key !== "name" && key !== "type" && key !== "favorite";
-    })
+    return keys.filter( key => (
+      key !== "name"
+      && key !== "type"
+      && key !== "favorite" 
+      && key !== "residents"
+    ))
   }
 
-  const renderedDetails = () =>{
+  const renderDetails = () =>{
     const keys = Object.keys(item);
-    let residentKey = keys.find( key => key === 'residents');
-    
-    if(residentKey && item.residents.length > 0) {
-      const list = item.residents.map( resident => <li>{resident}</li>)
-
-      item.residents = (
-        <div className="residents">
-          <ul>
-            {list}
-          </ul>
-        </div>
-      )
-    } 
-
-    const cleanedKeys = cleanKeys(keys)
-    
+    const cleanedKeys = cleanKeys(keys);
+  
     return cleanedKeys.map( detail => {
       return (
         <div>
@@ -42,15 +30,36 @@ const Card = ({ item, addFavorite }) => {
     })
   }
 
+  const renderResidents = () => {
+    if(item.residents) {
+      const residentList = item.residents.map( resident => 
+        <li key={ Date.now() + resident }>{ resident }</li>
+      )
+
+      return (
+        <div>
+          <h4 className="character-detail">Residents</h4>
+          <ul className="residents">
+            { residentList }
+          </ul>
+        </div>
+      )
+    } 
+  }
+
   const addFavoriteCard = e => {
     addFavorite(item);
   }
-
+  
   return (
     <div className="card">
-      <img src={ setFavoriteBtn } className="favorite-button" onClick={ addFavoriteCard } />
+      <img src={ favoriteBtn } 
+           alt="add favorite"
+           className="favorite-button"
+           onClick={ addFavoriteCard } />
       <h2>{ name }</h2>
-      { renderedDetails() }
+      { renderDetails() }
+      { renderResidents() }
     </div>
   )
 }
