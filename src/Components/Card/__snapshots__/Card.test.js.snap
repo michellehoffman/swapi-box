@@ -94,7 +94,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1517838804942homeworld",
+        "key": "1517860430856homeworld",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -138,7 +138,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1517838804942species",
+        "key": "1517860430856species",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -259,7 +259,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1517838804942homeworld",
+          "key": "1517860430856homeworld",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -303,7 +303,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1517838804942species",
+          "key": "1517860430856species",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -491,7 +491,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1517838804947terrain",
+        "key": "1517860430859terrain",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -535,7 +535,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1517838804947climate",
+        "key": "1517860430859climate",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -579,7 +579,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1517838804947population",
+        "key": "1517860430859population",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -683,7 +683,7 @@ ShallowWrapper {
             "rendered": Array [
               Object {
                 "instance": null,
-                "key": "1517838804947https://swapi.co/api/people/5/",
+                "key": "1517860430859https://swapi.co/api/people/5/",
                 "nodeType": "host",
                 "props": Object {
                   "children": "https://swapi.co/api/people/5/",
@@ -694,7 +694,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": "1517838804947https://swapi.co/api/people/68/",
+                "key": "1517860430859https://swapi.co/api/people/68/",
                 "nodeType": "host",
                 "props": Object {
                   "children": "https://swapi.co/api/people/68/",
@@ -705,7 +705,7 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
-                "key": "1517838804947https://swapi.co/api/people/81/",
+                "key": "1517860430859https://swapi.co/api/people/81/",
                 "nodeType": "host",
                 "props": Object {
                   "children": "https://swapi.co/api/people/81/",
@@ -823,7 +823,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1517838804947terrain",
+          "key": "1517860430859terrain",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -867,7 +867,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1517838804947climate",
+          "key": "1517860430859climate",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -911,7 +911,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1517838804947population",
+          "key": "1517860430859population",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -1015,7 +1015,7 @@ ShallowWrapper {
               "rendered": Array [
                 Object {
                   "instance": null,
-                  "key": "1517838804947https://swapi.co/api/people/5/",
+                  "key": "1517860430859https://swapi.co/api/people/5/",
                   "nodeType": "host",
                   "props": Object {
                     "children": "https://swapi.co/api/people/5/",
@@ -1026,7 +1026,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": "1517838804947https://swapi.co/api/people/68/",
+                  "key": "1517860430859https://swapi.co/api/people/68/",
                   "nodeType": "host",
                   "props": Object {
                     "children": "https://swapi.co/api/people/68/",
@@ -1037,7 +1037,7 @@ ShallowWrapper {
                 },
                 Object {
                   "instance": null,
-                  "key": "1517838804947https://swapi.co/api/people/81/",
+                  "key": "1517860430859https://swapi.co/api/people/81/",
                   "nodeType": "host",
                   "props": Object {
                     "children": "https://swapi.co/api/people/81/",
@@ -1077,7 +1077,7 @@ ShallowWrapper {
             "model": "Digger Crawler",
             "name": "Sand Crawler",
             "passengers": "30",
-            "vehicle_class": "wheeled",
+            "vehicleClass": "wheeled",
           }
     }
     type="vehicle"
@@ -1119,7 +1119,7 @@ ShallowWrapper {
             <h4
                         className="character-detail"
             >
-                        vehicle_class
+                        vehicleClass
             </h4>
             <p>
                         wheeled
@@ -1169,7 +1169,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1517838804954model",
+        "key": "1517860430863model",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -1213,14 +1213,14 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1517838804954vehicle_class",
+        "key": "1517860430863vehicleClass",
         "nodeType": "host",
         "props": Object {
           "children": Array [
             <h4
               className="character-detail"
 >
-              vehicle_class
+              vehicleClass
 </h4>,
             <p>
               wheeled
@@ -1234,11 +1234,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "vehicle_class",
+              "children": "vehicleClass",
               "className": "character-detail",
             },
             "ref": null,
-            "rendered": "vehicle_class",
+            "rendered": "vehicleClass",
             "type": "h4",
           },
           Object {
@@ -1257,7 +1257,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1517838804954passengers",
+        "key": "1517860430863passengers",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -1334,7 +1334,7 @@ ShallowWrapper {
               <h4
                             className="character-detail"
               >
-                            vehicle_class
+                            vehicleClass
               </h4>
               <p>
                             wheeled
@@ -1384,7 +1384,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1517838804954model",
+          "key": "1517860430863model",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -1428,14 +1428,14 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1517838804954vehicle_class",
+          "key": "1517860430863vehicleClass",
           "nodeType": "host",
           "props": Object {
             "children": Array [
               <h4
                 className="character-detail"
 >
-                vehicle_class
+                vehicleClass
 </h4>,
               <p>
                 wheeled
@@ -1449,11 +1449,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "vehicle_class",
+                "children": "vehicleClass",
                 "className": "character-detail",
               },
               "ref": null,
-              "rendered": "vehicle_class",
+              "rendered": "vehicleClass",
               "type": "h4",
             },
             Object {
@@ -1472,7 +1472,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1517838804954passengers",
+          "key": "1517860430863passengers",
           "nodeType": "host",
           "props": Object {
             "children": Array [

@@ -104,7 +104,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "1517838805045Luke Skywalker",
+        "key": "1517860430749Luke Skywalker",
         "nodeType": "function",
         "props": Object {
           "addFavorite": [Function],
@@ -203,7 +203,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "1517838805045Luke Skywalker",
+          "key": "1517860430749Luke Skywalker",
           "nodeType": "function",
           "props": Object {
             "addFavorite": [Function],
