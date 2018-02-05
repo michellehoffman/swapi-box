@@ -105,7 +105,9 @@ freedom to the galaxy...."
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <section>
+      "children": <section
+        className="crawl"
+>
         <article
                 className="crawl-text"
         >
@@ -131,18 +133,22 @@ freedom to the galaxy...."
                 people and restore
                 freedom to the galaxy....
         </article>
-        <h4
+        <p
                 className="film-title"
         >
                 A New Hope
-        </h4>
-        <h5
+        </p>
+        <p
                 className="release-date"
         >
+                Released: 
                 1977-05-25
-        </h5>
+        </p>
+        <img
+                alt="Star Wars logo"
+                src="logo.png"
+        />
 </section>,
-      "className": "crawl",
     },
     "ref": null,
     "rendered": Object {
@@ -176,17 +182,23 @@ freedom to the galaxy...."
             people and restore
             freedom to the galaxy....
 </article>,
-          <h4
+          <p
             className="film-title"
 >
             A New Hope
-</h4>,
-          <h5
+</p>,
+          <p
             className="release-date"
 >
+            Released: 
             1977-05-25
-</h5>,
+</p>,
+          <img
+            alt="Star Wars logo"
+            src="logo.png"
+/>,
         ],
+        "className": "crawl",
       },
       "ref": null,
       "rendered": Array [
@@ -252,19 +264,37 @@ freedom to the galaxy....",
           },
           "ref": null,
           "rendered": "A New Hope",
-          "type": "h4",
+          "type": "p",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "1977-05-25",
+            "children": Array [
+              "Released: ",
+              "1977-05-25",
+            ],
             "className": "release-date",
           },
           "ref": null,
-          "rendered": "1977-05-25",
-          "type": "h5",
+          "rendered": Array [
+            "Released: ",
+            "1977-05-25",
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Star Wars logo",
+            "src": "logo.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
         },
       ],
       "type": "section",
@@ -277,7 +307,9 @@ freedom to the galaxy....",
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <section>
+        "children": <section
+          className="crawl"
+>
           <article
                     className="crawl-text"
           >
@@ -303,18 +335,22 @@ freedom to the galaxy....",
                     people and restore
                     freedom to the galaxy....
           </article>
-          <h4
+          <p
                     className="film-title"
           >
                     A New Hope
-          </h4>
-          <h5
+          </p>
+          <p
                     className="release-date"
           >
+                    Released: 
                     1977-05-25
-          </h5>
+          </p>
+          <img
+                    alt="Star Wars logo"
+                    src="logo.png"
+          />
 </section>,
-        "className": "crawl",
       },
       "ref": null,
       "rendered": Object {
@@ -348,17 +384,23 @@ freedom to the galaxy....",
               people and restore
               freedom to the galaxy....
 </article>,
-            <h4
+            <p
               className="film-title"
 >
               A New Hope
-</h4>,
-            <h5
+</p>,
+            <p
               className="release-date"
 >
+              Released: 
               1977-05-25
-</h5>,
+</p>,
+            <img
+              alt="Star Wars logo"
+              src="logo.png"
+/>,
           ],
+          "className": "crawl",
         },
         "ref": null,
         "rendered": Array [
@@ -424,19 +466,37 @@ freedom to the galaxy....",
             },
             "ref": null,
             "rendered": "A New Hope",
-            "type": "h4",
+            "type": "p",
           },
           Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "1977-05-25",
+              "children": Array [
+                "Released: ",
+                "1977-05-25",
+              ],
               "className": "release-date",
             },
             "ref": null,
-            "rendered": "1977-05-25",
-            "type": "h5",
+            "rendered": Array [
+              "Released: ",
+              "1977-05-25",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Star Wars logo",
+              "src": "logo.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
           },
         ],
         "type": "section",

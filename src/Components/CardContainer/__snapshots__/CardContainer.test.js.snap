@@ -12,6 +12,7 @@ ShallowWrapper {
               "created": "2014-12-09T13:50:51.644000Z",
               "edited": "2014-12-20T21:17:56.891000Z",
               "eye_color": "blue",
+              "favorite": "false",
               "films": Array [
                 "https://swapi.co/api/films/2/",
                 "https://swapi.co/api/films/6/",
@@ -64,6 +65,7 @@ ShallowWrapper {
                               "created": "2014-12-09T13:50:51.644000Z",
                               "edited": "2014-12-20T21:17:56.891000Z",
                               "eye_color": "blue",
+                              "favorite": "false",
                               "films": Array [
                                 "https://swapi.co/api/films/2/",
                                 "https://swapi.co/api/films/6/",
@@ -93,15 +95,15 @@ ShallowWrapper {
                               ],
                             }
           }
-          type="people"
 />,
       ],
+      "className": "card-container",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1517838317643Luke Skywalker",
         "nodeType": "function",
         "props": Object {
           "addFavorite": undefined,
@@ -110,6 +112,7 @@ ShallowWrapper {
             "created": "2014-12-09T13:50:51.644000Z",
             "edited": "2014-12-20T21:17:56.891000Z",
             "eye_color": "blue",
+            "favorite": "false",
             "films": Array [
               "https://swapi.co/api/films/2/",
               "https://swapi.co/api/films/6/",
@@ -138,7 +141,6 @@ ShallowWrapper {
               "https://swapi.co/api/vehicles/30/",
             ],
           },
-          "type": "people",
         },
         "ref": null,
         "rendered": null,
@@ -162,6 +164,7 @@ ShallowWrapper {
                                     "created": "2014-12-09T13:50:51.644000Z",
                                     "edited": "2014-12-20T21:17:56.891000Z",
                                     "eye_color": "blue",
+                                    "favorite": "false",
                                     "films": Array [
                                       "https://swapi.co/api/films/2/",
                                       "https://swapi.co/api/films/6/",
@@ -191,15 +194,15 @@ ShallowWrapper {
                                     ],
                                   }
             }
-            type="people"
 />,
         ],
+        "className": "card-container",
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1517838317643Luke Skywalker",
           "nodeType": "function",
           "props": Object {
             "addFavorite": undefined,
@@ -208,6 +211,7 @@ ShallowWrapper {
               "created": "2014-12-09T13:50:51.644000Z",
               "edited": "2014-12-20T21:17:56.891000Z",
               "eye_color": "blue",
+              "favorite": "false",
               "films": Array [
                 "https://swapi.co/api/films/2/",
                 "https://swapi.co/api/films/6/",
@@ -236,7 +240,6 @@ ShallowWrapper {
                 "https://swapi.co/api/vehicles/30/",
               ],
             },
-            "type": "people",
           },
           "ref": null,
           "rendered": null,
