@@ -1,6 +1,6 @@
 const url = 'https://swapi.co/api'
 
-const cleanFilms = films => {
+export const cleanFilms = films => {
   return films.reduce(( acc, film ) => {
     const { title, opening_crawl, release_date } = film
     const cleanedFilm = {
@@ -30,7 +30,7 @@ export const getFilms = async () => {
 
 }
 
-const cleanVehicles = vehicles => {
+export const cleanVehicles = vehicles => {
   return vehicles.reduce(( acc, vehicle ) => {
     const { name, model, vehicle_class, passengers } = vehicle;
     const cleanedVehicle = {
@@ -63,7 +63,7 @@ export const getVehicles = async () => {
  
 }
 
-const cleanPeople = people => {
+export const cleanPeople = people => {
   return people.reduce(( acc, person ) => {
     const { name, homeworld, species } = person;
     const cleanedPerson = {
@@ -129,7 +129,7 @@ export const getPeople = async () => {
   }
 }
 
-const cleanPlanets = planets => {
+export const cleanPlanets = planets => {
   return planets.reduce(( acc, planet ) => {
     const { name, terrain, population, climate, residents} = planet
     const cleanedPlanet = {
@@ -166,7 +166,7 @@ export const getResidents = (array = [], newArray) => {
   return Promise.all(unresolvedResidents)
 }
 
-const getPlanetData = planetsArray => {
+export const getPlanetData = planetsArray => {
   const unresolvedPromises = planetsArray.map( async (planet) => {
     let namesArray;
     let names = await getResidents(planet.residents, namesArray)

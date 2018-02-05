@@ -30,19 +30,57 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <img
+          alt="add favorite"
+          className="favorite-button"
+          onClick={[Function]}
+          src="starInactive.svg"
+/>,
         <h2>
           Luke Skywalker
 </h2>,
-        <ul />,
-        <button
-          onClick={[Function]}
->
-          +
-</button>,
+        Array [
+          <div>
+            <h4
+                        className="character-detail"
+            >
+                        homeworld
+            </h4>
+            <p>
+                        https://swapi.co/api/planets/1/
+            </p>
+</div>,
+          <div>
+            <h4
+                        className="character-detail"
+            >
+                        species
+            </h4>
+            <p>
+                        https://swapi.co/api/species/1/
+            </p>
+</div>,
+        ],
+        undefined,
       ],
+      "className": "card",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "add favorite",
+          "className": "favorite-button",
+          "onClick": [Function],
+          "src": "starInactive.svg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -56,27 +94,97 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1517838804942homeworld",
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            <h4
+              className="character-detail"
+>
+              homeworld
+</h4>,
+            <p>
+              https://swapi.co/api/planets/1/
+</p>,
+          ],
         },
         "ref": null,
-        "rendered": null,
-        "type": "ul",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "homeworld",
+              "className": "character-detail",
+            },
+            "ref": null,
+            "rendered": "homeworld",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "https://swapi.co/api/planets/1/",
+            },
+            "ref": null,
+            "rendered": "https://swapi.co/api/planets/1/",
+            "type": "p",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1517838804942species",
         "nodeType": "host",
         "props": Object {
-          "children": "+",
-          "onClick": [Function],
+          "children": Array [
+            <h4
+              className="character-detail"
+>
+              species
+</h4>,
+            <p>
+              https://swapi.co/api/species/1/
+</p>,
+          ],
         },
         "ref": null,
-        "rendered": "+",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "species",
+              "className": "character-detail",
+            },
+            "ref": null,
+            "rendered": "species",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "https://swapi.co/api/species/1/",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "https://swapi.co/api/species/1/",
+            ],
+            "type": "p",
+          },
+        ],
+        "type": "div",
       },
+      undefined,
     ],
     "type": "div",
   },
@@ -87,19 +195,57 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <img
+            alt="add favorite"
+            className="favorite-button"
+            onClick={[Function]}
+            src="starInactive.svg"
+/>,
           <h2>
             Luke Skywalker
 </h2>,
-          <ul />,
-          <button
-            onClick={[Function]}
->
-            +
-</button>,
+          Array [
+            <div>
+              <h4
+                            className="character-detail"
+              >
+                            homeworld
+              </h4>
+              <p>
+                            https://swapi.co/api/planets/1/
+              </p>
+</div>,
+            <div>
+              <h4
+                            className="character-detail"
+              >
+                            species
+              </h4>
+              <p>
+                            https://swapi.co/api/species/1/
+              </p>
+</div>,
+          ],
+          undefined,
         ],
+        "className": "card",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "add favorite",
+            "className": "favorite-button",
+            "onClick": [Function],
+            "src": "starInactive.svg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -113,27 +259,97 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1517838804942homeworld",
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              <h4
+                className="character-detail"
+>
+                homeworld
+</h4>,
+              <p>
+                https://swapi.co/api/planets/1/
+</p>,
+            ],
           },
           "ref": null,
-          "rendered": null,
-          "type": "ul",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "homeworld",
+                "className": "character-detail",
+              },
+              "ref": null,
+              "rendered": "homeworld",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "https://swapi.co/api/planets/1/",
+              },
+              "ref": null,
+              "rendered": "https://swapi.co/api/planets/1/",
+              "type": "p",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1517838804942species",
           "nodeType": "host",
           "props": Object {
-            "children": "+",
-            "onClick": [Function],
+            "children": Array [
+              <h4
+                className="character-detail"
+>
+                species
+</h4>,
+              <p>
+                https://swapi.co/api/species/1/
+</p>,
+            ],
           },
           "ref": null,
-          "rendered": "+",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "species",
+                "className": "character-detail",
+              },
+              "ref": null,
+              "rendered": "species",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "https://swapi.co/api/species/1/",
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "https://swapi.co/api/species/1/",
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "div",
         },
+        undefined,
       ],
       "type": "div",
     },
@@ -182,19 +398,86 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <img
+          alt="add favorite"
+          className="favorite-button"
+          onClick={[Function]}
+          src="starInactive.svg"
+/>,
         <h2>
           Alderaan
 </h2>,
-        <ul />,
-        <button
-          onClick={[Function]}
->
-          +
-</button>,
+        Array [
+          <div>
+            <h4
+                        className="character-detail"
+            >
+                        terrain
+            </h4>
+            <p>
+                        grasslands, mountains
+            </p>
+</div>,
+          <div>
+            <h4
+                        className="character-detail"
+            >
+                        climate
+            </h4>
+            <p>
+                        temperate
+            </p>
+</div>,
+          <div>
+            <h4
+                        className="character-detail"
+            >
+                        population
+            </h4>
+            <p>
+                        2000000000
+            </p>
+</div>,
+        ],
+        <div>
+          <h4
+                    className="character-detail"
+          >
+                    Residents
+          </h4>
+          <ul
+                    className="residents"
+          >
+                    <li>
+                              https://swapi.co/api/people/5/
+                    </li>
+                    <li>
+                              https://swapi.co/api/people/68/
+                    </li>
+                    <li>
+                              https://swapi.co/api/people/81/
+                    </li>
+          </ul>
+</div>,
       ],
+      "className": "card",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "add favorite",
+          "className": "favorite-button",
+          "onClick": [Function],
+          "src": "starInactive.svg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -208,26 +491,234 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1517838804947terrain",
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            <h4
+              className="character-detail"
+>
+              terrain
+</h4>,
+            <p>
+              grasslands, mountains
+</p>,
+          ],
         },
         "ref": null,
-        "rendered": null,
-        "type": "ul",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "terrain",
+              "className": "character-detail",
+            },
+            "ref": null,
+            "rendered": "terrain",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "grasslands, mountains",
+            },
+            "ref": null,
+            "rendered": "grasslands, mountains",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "1517838804947climate",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4
+              className="character-detail"
+>
+              climate
+</h4>,
+            <p>
+              temperate
+</p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "climate",
+              "className": "character-detail",
+            },
+            "ref": null,
+            "rendered": "climate",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "temperate",
+            },
+            "ref": null,
+            "rendered": "temperate",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "1517838804947population",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4
+              className="character-detail"
+>
+              population
+</h4>,
+            <p>
+              2000000000
+</p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "population",
+              "className": "character-detail",
+            },
+            "ref": null,
+            "rendered": "population",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "2000000000",
+            },
+            "ref": null,
+            "rendered": "2000000000",
+            "type": "p",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "+",
-          "onClick": [Function],
+          "children": Array [
+            <h4
+              className="character-detail"
+>
+              Residents
+</h4>,
+            <ul
+              className="residents"
+>
+              <li>
+                            https://swapi.co/api/people/5/
+              </li>
+              <li>
+                            https://swapi.co/api/people/68/
+              </li>
+              <li>
+                            https://swapi.co/api/people/81/
+              </li>
+</ul>,
+          ],
         },
         "ref": null,
-        "rendered": "+",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Residents",
+              "className": "character-detail",
+            },
+            "ref": null,
+            "rendered": "Residents",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  https://swapi.co/api/people/5/
+</li>,
+                <li>
+                  https://swapi.co/api/people/68/
+</li>,
+                <li>
+                  https://swapi.co/api/people/81/
+</li>,
+              ],
+              "className": "residents",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "1517838804947https://swapi.co/api/people/5/",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "https://swapi.co/api/people/5/",
+                },
+                "ref": null,
+                "rendered": "https://swapi.co/api/people/5/",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "1517838804947https://swapi.co/api/people/68/",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "https://swapi.co/api/people/68/",
+                },
+                "ref": null,
+                "rendered": "https://swapi.co/api/people/68/",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": "1517838804947https://swapi.co/api/people/81/",
+                "nodeType": "host",
+                "props": Object {
+                  "children": "https://swapi.co/api/people/81/",
+                },
+                "ref": null,
+                "rendered": "https://swapi.co/api/people/81/",
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -239,19 +730,86 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <img
+            alt="add favorite"
+            className="favorite-button"
+            onClick={[Function]}
+            src="starInactive.svg"
+/>,
           <h2>
             Alderaan
 </h2>,
-          <ul />,
-          <button
-            onClick={[Function]}
->
-            +
-</button>,
+          Array [
+            <div>
+              <h4
+                            className="character-detail"
+              >
+                            terrain
+              </h4>
+              <p>
+                            grasslands, mountains
+              </p>
+</div>,
+            <div>
+              <h4
+                            className="character-detail"
+              >
+                            climate
+              </h4>
+              <p>
+                            temperate
+              </p>
+</div>,
+            <div>
+              <h4
+                            className="character-detail"
+              >
+                            population
+              </h4>
+              <p>
+                            2000000000
+              </p>
+</div>,
+          ],
+          <div>
+            <h4
+                        className="character-detail"
+            >
+                        Residents
+            </h4>
+            <ul
+                        className="residents"
+            >
+                        <li>
+                                    https://swapi.co/api/people/5/
+                        </li>
+                        <li>
+                                    https://swapi.co/api/people/68/
+                        </li>
+                        <li>
+                                    https://swapi.co/api/people/81/
+                        </li>
+            </ul>
+</div>,
         ],
+        "className": "card",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "add favorite",
+            "className": "favorite-button",
+            "onClick": [Function],
+            "src": "starInactive.svg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -265,26 +823,234 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1517838804947terrain",
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              <h4
+                className="character-detail"
+>
+                terrain
+</h4>,
+              <p>
+                grasslands, mountains
+</p>,
+            ],
           },
           "ref": null,
-          "rendered": null,
-          "type": "ul",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "terrain",
+                "className": "character-detail",
+              },
+              "ref": null,
+              "rendered": "terrain",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "grasslands, mountains",
+              },
+              "ref": null,
+              "rendered": "grasslands, mountains",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "1517838804947climate",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4
+                className="character-detail"
+>
+                climate
+</h4>,
+              <p>
+                temperate
+</p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "climate",
+                "className": "character-detail",
+              },
+              "ref": null,
+              "rendered": "climate",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "temperate",
+              },
+              "ref": null,
+              "rendered": "temperate",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": "1517838804947population",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4
+                className="character-detail"
+>
+                population
+</h4>,
+              <p>
+                2000000000
+</p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "population",
+                "className": "character-detail",
+              },
+              "ref": null,
+              "rendered": "population",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "2000000000",
+              },
+              "ref": null,
+              "rendered": "2000000000",
+              "type": "p",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "+",
-            "onClick": [Function],
+            "children": Array [
+              <h4
+                className="character-detail"
+>
+                Residents
+</h4>,
+              <ul
+                className="residents"
+>
+                <li>
+                                https://swapi.co/api/people/5/
+                </li>
+                <li>
+                                https://swapi.co/api/people/68/
+                </li>
+                <li>
+                                https://swapi.co/api/people/81/
+                </li>
+</ul>,
+            ],
           },
           "ref": null,
-          "rendered": "+",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Residents",
+                "className": "character-detail",
+              },
+              "ref": null,
+              "rendered": "Residents",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    https://swapi.co/api/people/5/
+</li>,
+                  <li>
+                    https://swapi.co/api/people/68/
+</li>,
+                  <li>
+                    https://swapi.co/api/people/81/
+</li>,
+                ],
+                "className": "residents",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": "1517838804947https://swapi.co/api/people/5/",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "https://swapi.co/api/people/5/",
+                  },
+                  "ref": null,
+                  "rendered": "https://swapi.co/api/people/5/",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "1517838804947https://swapi.co/api/people/68/",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "https://swapi.co/api/people/68/",
+                  },
+                  "ref": null,
+                  "rendered": "https://swapi.co/api/people/68/",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": "1517838804947https://swapi.co/api/people/81/",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "https://swapi.co/api/people/81/",
+                  },
+                  "ref": null,
+                  "rendered": "https://swapi.co/api/people/81/",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
@@ -329,19 +1095,67 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+        <img
+          alt="add favorite"
+          className="favorite-button"
+          onClick={[Function]}
+          src="starInactive.svg"
+/>,
         <h2>
           Sand Crawler
 </h2>,
-        <ul />,
-        <button
-          onClick={[Function]}
->
-          +
-</button>,
+        Array [
+          <div>
+            <h4
+                        className="character-detail"
+            >
+                        model
+            </h4>
+            <p>
+                        Digger Crawler
+            </p>
+</div>,
+          <div>
+            <h4
+                        className="character-detail"
+            >
+                        vehicle_class
+            </h4>
+            <p>
+                        wheeled
+            </p>
+</div>,
+          <div>
+            <h4
+                        className="character-detail"
+            >
+                        passengers
+            </h4>
+            <p>
+                        30
+            </p>
+</div>,
+        ],
+        undefined,
       ],
+      "className": "card",
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "add favorite",
+          "className": "favorite-button",
+          "onClick": [Function],
+          "src": "starInactive.svg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -355,27 +1169,137 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1517838804954model",
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            <h4
+              className="character-detail"
+>
+              model
+</h4>,
+            <p>
+              Digger Crawler
+</p>,
+          ],
         },
         "ref": null,
-        "rendered": null,
-        "type": "ul",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "model",
+              "className": "character-detail",
+            },
+            "ref": null,
+            "rendered": "model",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Digger Crawler",
+            },
+            "ref": null,
+            "rendered": "Digger Crawler",
+            "type": "p",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1517838804954vehicle_class",
         "nodeType": "host",
         "props": Object {
-          "children": "+",
-          "onClick": [Function],
+          "children": Array [
+            <h4
+              className="character-detail"
+>
+              vehicle_class
+</h4>,
+            <p>
+              wheeled
+</p>,
+          ],
         },
         "ref": null,
-        "rendered": "+",
-        "type": "button",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "vehicle_class",
+              "className": "character-detail",
+            },
+            "ref": null,
+            "rendered": "vehicle_class",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "wheeled",
+            },
+            "ref": null,
+            "rendered": "wheeled",
+            "type": "p",
+          },
+        ],
+        "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": "1517838804954passengers",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4
+              className="character-detail"
+>
+              passengers
+</h4>,
+            <p>
+              30
+</p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "passengers",
+              "className": "character-detail",
+            },
+            "ref": null,
+            "rendered": "passengers",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "30",
+            },
+            "ref": null,
+            "rendered": "30",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      undefined,
     ],
     "type": "div",
   },
@@ -386,19 +1310,67 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+          <img
+            alt="add favorite"
+            className="favorite-button"
+            onClick={[Function]}
+            src="starInactive.svg"
+/>,
           <h2>
             Sand Crawler
 </h2>,
-          <ul />,
-          <button
-            onClick={[Function]}
->
-            +
-</button>,
+          Array [
+            <div>
+              <h4
+                            className="character-detail"
+              >
+                            model
+              </h4>
+              <p>
+                            Digger Crawler
+              </p>
+</div>,
+            <div>
+              <h4
+                            className="character-detail"
+              >
+                            vehicle_class
+              </h4>
+              <p>
+                            wheeled
+              </p>
+</div>,
+            <div>
+              <h4
+                            className="character-detail"
+              >
+                            passengers
+              </h4>
+              <p>
+                            30
+              </p>
+</div>,
+          ],
+          undefined,
         ],
+        "className": "card",
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "add favorite",
+            "className": "favorite-button",
+            "onClick": [Function],
+            "src": "starInactive.svg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -412,27 +1384,137 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1517838804954model",
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              <h4
+                className="character-detail"
+>
+                model
+</h4>,
+              <p>
+                Digger Crawler
+</p>,
+            ],
           },
           "ref": null,
-          "rendered": null,
-          "type": "ul",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "model",
+                "className": "character-detail",
+              },
+              "ref": null,
+              "rendered": "model",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Digger Crawler",
+              },
+              "ref": null,
+              "rendered": "Digger Crawler",
+              "type": "p",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1517838804954vehicle_class",
           "nodeType": "host",
           "props": Object {
-            "children": "+",
-            "onClick": [Function],
+            "children": Array [
+              <h4
+                className="character-detail"
+>
+                vehicle_class
+</h4>,
+              <p>
+                wheeled
+</p>,
+            ],
           },
           "ref": null,
-          "rendered": "+",
-          "type": "button",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "vehicle_class",
+                "className": "character-detail",
+              },
+              "ref": null,
+              "rendered": "vehicle_class",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "wheeled",
+              },
+              "ref": null,
+              "rendered": "wheeled",
+              "type": "p",
+            },
+          ],
+          "type": "div",
         },
+        Object {
+          "instance": null,
+          "key": "1517838804954passengers",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4
+                className="character-detail"
+>
+                passengers
+</h4>,
+              <p>
+                30
+</p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "passengers",
+                "className": "character-detail",
+              },
+              "ref": null,
+              "rendered": "passengers",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "30",
+              },
+              "ref": null,
+              "rendered": "30",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+        undefined,
       ],
       "type": "div",
     },

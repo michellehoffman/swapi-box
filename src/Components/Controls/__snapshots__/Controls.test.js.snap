@@ -4,7 +4,18 @@ exports[`Controls should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Controls />,
+  Symbol(enzyme.__unrendered__): <Controls
+    active="people"
+    favorites={
+        Array [
+            Object {
+              "name": "LukeSkywalker",
+              "type": "people",
+            },
+          ]
+    }
+    setCurrent={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -20,19 +31,19 @@ ShallowWrapper {
       "children": Array [
         <div>
           <button
-                    className="inactive"
+                    className=" controls active"
                     onClick={[Function]}
           >
                     people
           </button>
           <button
-                    className="inactive"
+                    className="controls"
                     onClick={[Function]}
           >
                     planets
           </button>
           <button
-                    className="inactive"
+                    className="controls"
                     onClick={[Function]}
           >
                     vehicles
@@ -40,11 +51,16 @@ ShallowWrapper {
 </div>,
         <div>
           <button
-                    className="inactive"
+                    className="controls"
+                    id="favorites-button"
                     onClick={[Function]}
           >
-                    favorites 
-                    <span />
+                    favorites
+                    <span
+                              id="num-faves"
+                    >
+                              1
+                    </span>
           </button>
 </div>,
       ],
@@ -58,19 +74,19 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <button
-              className="inactive"
+              className=" controls active"
               onClick={[Function]}
 >
               people
 </button>,
             <button
-              className="inactive"
+              className="controls"
               onClick={[Function]}
 >
               planets
 </button>,
             <button
-              className="inactive"
+              className="controls"
               onClick={[Function]}
 >
               vehicles
@@ -85,7 +101,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "people",
-              "className": "inactive",
+              "className": " controls active",
               "onClick": [Function],
             },
             "ref": null,
@@ -98,7 +114,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "planets",
-              "className": "inactive",
+              "className": "controls",
               "onClick": [Function],
             },
             "ref": null,
@@ -111,7 +127,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "vehicles",
-              "className": "inactive",
+              "className": "controls",
               "onClick": [Function],
             },
             "ref": null,
@@ -127,11 +143,16 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <button
-            className="inactive"
+            className="controls"
+            id="favorites-button"
             onClick={[Function]}
 >
-            favorites 
-            <span />
+            favorites
+            <span
+                        id="num-faves"
+            >
+                        1
+            </span>
 </button>,
         },
         "ref": null,
@@ -141,24 +162,30 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "favorites ",
-              <span />,
+              "favorites",
+              <span
+                id="num-faves"
+>
+                1
+</span>,
             ],
-            "className": "inactive",
+            "className": "controls",
+            "id": "favorites-button",
             "onClick": [Function],
           },
           "ref": null,
           "rendered": Array [
-            "favorites ",
+            "favorites",
             Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": 0,
+                "children": 1,
+                "id": "num-faves",
               },
               "ref": null,
-              "rendered": 0,
+              "rendered": 1,
               "type": "span",
             },
           ],
@@ -178,19 +205,19 @@ ShallowWrapper {
         "children": Array [
           <div>
             <button
-                        className="inactive"
+                        className=" controls active"
                         onClick={[Function]}
             >
                         people
             </button>
             <button
-                        className="inactive"
+                        className="controls"
                         onClick={[Function]}
             >
                         planets
             </button>
             <button
-                        className="inactive"
+                        className="controls"
                         onClick={[Function]}
             >
                         vehicles
@@ -198,11 +225,16 @@ ShallowWrapper {
 </div>,
           <div>
             <button
-                        className="inactive"
+                        className="controls"
+                        id="favorites-button"
                         onClick={[Function]}
             >
-                        favorites 
-                        <span />
+                        favorites
+                        <span
+                                    id="num-faves"
+                        >
+                                    1
+                        </span>
             </button>
 </div>,
         ],
@@ -216,19 +248,19 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <button
-                className="inactive"
+                className=" controls active"
                 onClick={[Function]}
 >
                 people
 </button>,
               <button
-                className="inactive"
+                className="controls"
                 onClick={[Function]}
 >
                 planets
 </button>,
               <button
-                className="inactive"
+                className="controls"
                 onClick={[Function]}
 >
                 vehicles
@@ -243,7 +275,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "people",
-                "className": "inactive",
+                "className": " controls active",
                 "onClick": [Function],
               },
               "ref": null,
@@ -256,7 +288,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "planets",
-                "className": "inactive",
+                "className": "controls",
                 "onClick": [Function],
               },
               "ref": null,
@@ -269,7 +301,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "vehicles",
-                "className": "inactive",
+                "className": "controls",
                 "onClick": [Function],
               },
               "ref": null,
@@ -285,11 +317,16 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <button
-              className="inactive"
+              className="controls"
+              id="favorites-button"
               onClick={[Function]}
 >
-              favorites 
-              <span />
+              favorites
+              <span
+                            id="num-faves"
+              >
+                            1
+              </span>
 </button>,
           },
           "ref": null,
@@ -299,24 +336,30 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                "favorites ",
-                <span />,
+                "favorites",
+                <span
+                  id="num-faves"
+>
+                  1
+</span>,
               ],
-              "className": "inactive",
+              "className": "controls",
+              "id": "favorites-button",
               "onClick": [Function],
             },
             "ref": null,
             "rendered": Array [
-              "favorites ",
+              "favorites",
               Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": 0,
+                  "children": 1,
+                  "id": "num-faves",
                 },
                 "ref": null,
-                "rendered": 0,
+                "rendered": 1,
                 "type": "span",
               },
             ],

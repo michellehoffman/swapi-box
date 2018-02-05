@@ -23,7 +23,7 @@ class App extends Component {
 
   componentDidMount() {
     this.loadFilmCrawl();
-    setTimeout(this.setData(), 500)
+    setTimeout(this.setData(), 1000)
   }
 
   getRandomFilm = array => {
