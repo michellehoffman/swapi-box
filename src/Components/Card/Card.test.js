@@ -46,7 +46,7 @@ describe('Card', () => {
     const vehicle = {
       "name": "Sand Crawler", 
       "model": "Digger Crawler", 
-      "vehicle_class": "wheeled", 
+      "vehicleClass": "wheeled", 
       "passengers": "30"
     }
     const addFavorite = jest.fn();
