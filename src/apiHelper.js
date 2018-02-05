@@ -2,11 +2,11 @@ const url = 'https://swapi.co/api';
 
 export const cleanFilms = films => {
   return films.reduce(( acc, film ) => {
-    const { title, openingCrawl, releaseDate } = film;
+    const { title, opening_crawl, release_date } = film;
     const cleanedFilm = {
       title,
-      openingCrawl,
-      releaseDate
+      opening_crawl,
+      release_date
     };
 
     acc = [...acc, cleanedFilm];
