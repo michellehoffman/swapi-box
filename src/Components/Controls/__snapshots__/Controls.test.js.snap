@@ -4,7 +4,18 @@ exports[`Controls should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Controls />,
+  Symbol(enzyme.__unrendered__): <Controls
+    active="people"
+    favorites={
+        Array [
+            Object {
+              "name": "LukeSkywalker",
+              "type": "people",
+            },
+          ]
+    }
+    setCurrent={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -20,7 +31,7 @@ ShallowWrapper {
       "children": Array [
         <div>
           <button
-                    className="controls"
+                    className=" controls active"
                     onClick={[Function]}
           >
                     people
@@ -47,7 +58,9 @@ ShallowWrapper {
                     favorites
                     <span
                               id="num-faves"
-                    />
+                    >
+                              1
+                    </span>
           </button>
 </div>,
       ],
@@ -61,7 +74,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <button
-              className="controls"
+              className=" controls active"
               onClick={[Function]}
 >
               people
@@ -88,7 +101,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "people",
-              "className": "controls",
+              "className": " controls active",
               "onClick": [Function],
             },
             "ref": null,
@@ -137,7 +150,9 @@ ShallowWrapper {
             favorites
             <span
                         id="num-faves"
-            />
+            >
+                        1
+            </span>
 </button>,
         },
         "ref": null,
@@ -150,7 +165,9 @@ ShallowWrapper {
               "favorites",
               <span
                 id="num-faves"
-/>,
+>
+                1
+</span>,
             ],
             "className": "controls",
             "id": "favorites-button",
@@ -164,11 +181,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": 0,
+                "children": 1,
                 "id": "num-faves",
               },
               "ref": null,
-              "rendered": 0,
+              "rendered": 1,
               "type": "span",
             },
           ],
@@ -188,7 +205,7 @@ ShallowWrapper {
         "children": Array [
           <div>
             <button
-                        className="controls"
+                        className=" controls active"
                         onClick={[Function]}
             >
                         people
@@ -215,7 +232,9 @@ ShallowWrapper {
                         favorites
                         <span
                                     id="num-faves"
-                        />
+                        >
+                                    1
+                        </span>
             </button>
 </div>,
         ],
@@ -229,7 +248,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <button
-                className="controls"
+                className=" controls active"
                 onClick={[Function]}
 >
                 people
@@ -256,7 +275,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "people",
-                "className": "controls",
+                "className": " controls active",
                 "onClick": [Function],
               },
               "ref": null,
@@ -305,7 +324,9 @@ ShallowWrapper {
               favorites
               <span
                             id="num-faves"
-              />
+              >
+                            1
+              </span>
 </button>,
           },
           "ref": null,
@@ -318,7 +339,9 @@ ShallowWrapper {
                 "favorites",
                 <span
                   id="num-faves"
-/>,
+>
+                  1
+</span>,
               ],
               "className": "controls",
               "id": "favorites-button",
@@ -332,11 +355,11 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": 0,
+                  "children": 1,
                   "id": "num-faves",
                 },
                 "ref": null,
-                "rendered": 0,
+                "rendered": 1,
                 "type": "span",
               },
             ],

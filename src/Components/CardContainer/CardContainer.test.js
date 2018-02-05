@@ -8,9 +8,11 @@ describe('CardContainer', () => {
   let wrapper;
 
   beforeEach(() => {
-    const array = mockData.people.results;
+    const mockArray = mockData.people.results;
+    const mockAddFavorite = jest.fn();
 
-    wrapper = shallow(<CardContainer arrayToDisplay={ array } />);
+    wrapper = shallow(<CardContainer arrayToDisplay={ mockArray } 
+                                     addFavorite={ mockAddFavorite } />);
   });
 
   it('should match snapshot', () => {

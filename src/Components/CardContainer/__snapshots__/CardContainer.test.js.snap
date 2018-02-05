@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CardContainer
+    addFavorite={[Function]}
     arrayToDisplay={
         Array [
             Object {
@@ -58,7 +59,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Card
-          addFavorite={undefined}
+          addFavorite={[Function]}
           item={
                     Object {
                               "birth_year": "19BBY",
@@ -103,10 +104,10 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "1517838317643Luke Skywalker",
+        "key": "1517838805045Luke Skywalker",
         "nodeType": "function",
         "props": Object {
-          "addFavorite": undefined,
+          "addFavorite": [Function],
           "item": Object {
             "birth_year": "19BBY",
             "created": "2014-12-09T13:50:51.644000Z",
@@ -157,7 +158,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Card
-            addFavorite={undefined}
+            addFavorite={[Function]}
             item={
                         Object {
                                     "birth_year": "19BBY",
@@ -202,10 +203,10 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "1517838317643Luke Skywalker",
+          "key": "1517838805045Luke Skywalker",
           "nodeType": "function",
           "props": Object {
-            "addFavorite": undefined,
+            "addFavorite": [Function],
             "item": Object {
               "birth_year": "19BBY",
               "created": "2014-12-09T13:50:51.644000Z",
